@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Territory Sales Details - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-brand">
+                <i class="fas fa-chart-line me-2"></i>AGPanel
+            </a>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav flex-column">
+                <!-- Main Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                
+                <!-- User Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">
+                        <i class="nav-icon fas fa-users"></i>
+                        User Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        Role & Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="nav-icon fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                
+                <!-- Business Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="master-data.html">
+                        <i class="nav-icon fas fa-database"></i>
+                        Master Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales.html">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        Sales & Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-details.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Sales Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="sales-territory-details.html" class="nav-link active">
+                        <i class="nav-icon fas fa-map-marked-alt"></i>
+                        Territory Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        Inventory Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Reports & Analytics
+                    </a>
+                </li>
+                
+                <!-- Discount Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval.html">
+                        <i class="nav-icon fas fa-percentage"></i>
+                        Discount Approval
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval-cards.html">
+                        <i class="nav-icon fas fa-credit-card"></i>
+                        Discount Cards
+                    </a>
+                </li>
+                
+                <!-- UI Components -->
+                <li class="nav-item">
+                    <a class="nav-link" href="forms.html">
+                        <i class="nav-icon fas fa-edit"></i>
+                        Forms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="nav-icon fas fa-table"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widgets.html">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        Widgets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">
+                        <i class="nav-icon fas fa-mouse-pointer"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="nav-icon fas fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabs.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        Tabs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accordion.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Accordion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <i class="nav-icon fas fa-id-card"></i>
+                        Cards
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alerts.html">
+                        <i class="nav-icon fas fa-exclamation-circle"></i>
+                        Alerts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progress.html">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        Progress
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modals.html">
+                        <i class="nav-icon fas fa-window-maximize"></i>
+                        Modals
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tooltips.html">
+                        <i class="nav-icon fas fa-comment"></i>
+                        Tooltips
+                    </a>
+                </li>
+                
+                <!-- Communication -->
+                <li class="nav-item">
+                    <a class="nav-link" href="inbox.html">
+                        <i class="nav-icon fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="nav-icon fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                
+                <!-- Project Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="nav-icon fas fa-columns"></i>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="nav-icon fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+                
+                <!-- System -->
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <i class="nav-icon fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logs.html">
+                        <i class="nav-icon fas fa-history"></i>
+                        Audit Logs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file-manager.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        File Manager
+                    </a>
+                </li>
+                
+                <!-- Onboarding & Support -->
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">
+                        <i class="nav-icon fas fa-person-walking-arrow-right"></i>
+                        Onboarding
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">
+                        <i class="nav-icon fas fa-circle-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                
+                <!-- Business Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="nav-icon fas fa-tags"></i>
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.html">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        Invoice
+                    </a>
+                </li>
+                
+                <!-- Utility Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blank.html">
+                        <i class="nav-icon fas fa-file"></i>
+                        Blank Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="access-denied.html">
+                        <i class="nav-icon fas fa-ban"></i>
+                        Access Denied
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="404.html">
+                        <i class="nav-icon fas fa-exclamation-triangle"></i>
+                        404 Error
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="500.html">
+                        <i class="nav-icon fas fa-times-circle"></i>
+                        500 Error
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <button class="btn btn-link d-md-none" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-left">
+                <h1>Territory Sales Report</h1>
+                <p class="text-muted mb-0">Hierarchical view of sales performance by territory, store, and electronics categories (Laptops & Phones).</p>
+            </div>
+            <div class="header-right">
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-calendar-alt me-2"></i>Last 30 Days
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="changeTimeRange('7')">Last 7 Days</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeTimeRange('30')">Last 30 Days</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeTimeRange('90')">Last 90 Days</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeTimeRange('365')">Last Year</a></li>
+                    </ul>
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div>
+                        <div class="fw-semibold">John Doe</div>
+                        <small class="text-muted">Administrator</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Summary Header - Compact -->
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="card compact-header">
+                        <div class="card-body py-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="card-title mb-1">
+                                        <i class="fas fa-chart-line me-2"></i>Sales Performance Summary
+                                    </h6>
+                                    <small class="text-muted">Date: 9/6/2025 | Rate: $9,945.00</small>
+                                </div>
+                                <div class="text-end">
+                                    <div class="h5 mb-0 text-primary">$1,247,680</div>
+                                    <small class="text-muted">Total Revenue</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Territory Sales Table -->
+            <div class="card compact-table">
+                <div class="card-header compact-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h6 class="card-title mb-0">
+                            <i class="fas fa-map-marked-alt me-2"></i>Territory Sales Breakdown
+                        </h6>
+                        <div class="d-flex gap-1">
+                            <button class="btn btn-outline-primary btn-sm" onclick="expandAll()">
+                                <i class="fas fa-expand-arrows-alt me-1"></i>Expand
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm" onclick="collapseAll()">
+                                <i class="fas fa-compress-arrows-alt me-1"></i>Collapse
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0 table-sm">
+                            <thead class="table-light">
+                                <tr>
+                                    <th style="width: 35%">Territory / Store / Category</th>
+                                    <th class="text-center" style="width: 12%">Units</th>
+                                    <th class="text-center" style="width: 15%">Price Range</th>
+                                    <th class="text-center" style="width: 12%">Storage (GB)</th>
+                                    <th class="text-end" style="width: 15%">Value (Lakhs)</th>
+                                    <th class="text-center" style="width: 11%">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                <!-- CALIFORNIA Territory -->
+                <tr class="territory-row" data-level="1" data-id="california">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                            <button class="btn btn-sm btn-link p-0 me-2 expand-btn" onclick="toggleRow('california')">
+                                                <i class="fas fa-plus-square text-primary"></i>
+                                            </button>
+                                            <div class="territory-icon me-2">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                            <strong>CALIFORNIA</strong>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>84.00</span>
+                                            <small class="text-muted">(443)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>663.85</span>
+                                            <small class="text-muted">(4,166.69)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>13.34</span>
+                                            <small class="text-muted">(32.96)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>57.78</strong>
+                                            <small class="text-muted">(386.36)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="badge bg-success">Active</span>
+                                    </td>
+                                </tr>
+
+                <!-- CALIFORNIA Stores (Hidden by default) -->
+                <tr class="store-row d-none" data-level="2" data-parent="california" data-id="california-store1">
+                                    <td>
+                                        <div class="d-flex align-items-center ms-4">
+                            <button class="btn btn-sm btn-link p-0 me-2 expand-btn" onclick="toggleRow('california-store1')">
+                                                <i class="fas fa-plus-square text-info"></i>
+                                            </button>
+                                            <div class="store-icon me-2">
+                                                <i class="fas fa-store"></i>
+                                            </div>
+                            <strong>San Francisco - Market St</strong>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>45.00</span>
+                                            <small class="text-muted">(234)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>356.20</span>
+                                            <small class="text-muted">(2,234.50)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>7.15</span>
+                                            <small class="text-muted">(18.20)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>31.05</strong>
+                                            <small class="text-muted">(207.85)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="badge bg-success">Active</span>
+                                    </td>
+                                </tr>
+
+                <!-- CALIFORNIA Store 1 Categories (Hidden by default) -->
+                <tr class="metal-row d-none" data-level="3" data-parent="california-store1">
+                                    <td>
+                                        <div class="d-flex align-items-center ms-5">
+                                            <div class="metal-icon me-2">
+                                                <i class="fas fa-desktop text-info"></i>
+                                            </div>
+                            <span>DESKTOPS</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>15.00</span>
+                                            <small class="text-muted">(78)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>124.50</span>
+                                            <small class="text-muted">(780.30)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>7.15</span>
+                                            <small class="text-muted">(18.20)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>12.35</strong>
+                                            <small class="text-muted">(64.20)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="badge bg-warning">High Value</span>
+                                    </td>
+                                </tr>
+
+                <tr class="metal-row d-none" data-level="3" data-parent="california-store1">
+                                    <td>
+                                        <div class="d-flex align-items-center ms-5">
+                                            <div class="metal-icon me-2">
+                                                <i class="fas fa-laptop text-primary"></i>
+                                            </div>
+                            <span>LAPTOPS</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>20.00</span>
+                                            <small class="text-muted">(105)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>165.80</span>
+                                            <small class="text-muted">(1,034.20)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>-</span>
+                                            <small class="text-muted">(-)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>13.85</strong>
+                                            <small class="text-muted">(92.75)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="badge bg-info">Standard</span>
+                                    </td>
+                                </tr>
+
+                <tr class="metal-row d-none" data-level="3" data-parent="california-store1">
+                                    <td>
+                                        <div class="d-flex align-items-center ms-5">
+                                            <div class="metal-icon me-2">
+                                                <i class="fas fa-mobile-alt text-success"></i>
+                                            </div>
+                            <span>PHONES</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>10.00</span>
+                                            <small class="text-muted">(51)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>65.90</span>
+                                            <small class="text-muted">(420.00)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>-</span>
+                                            <small class="text-muted">(-)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>4.85</strong>
+                                            <small class="text-muted">(50.90)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="badge bg-secondary">Basic</span>
+                                    </td>
+                                </tr>
+
+                <!-- CALIFORNIA Store 2 -->
+                <tr class="store-row d-none" data-level="2" data-parent="california" data-id="california-store2">
+                                    <td>
+                                        <div class="d-flex align-items-center ms-4">
+                            <button class="btn btn-sm btn-link p-0 me-2 expand-btn" onclick="toggleRow('california-store2')">
+                                                <i class="fas fa-plus-square text-info"></i>
+                                            </button>
+                                            <div class="store-icon me-2">
+                                                <i class="fas fa-store"></i>
+                                            </div>
+                            <strong>Los Angeles - Sunset Blvd</strong>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>39.00</span>
+                                            <small class="text-muted">(209)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>307.65</span>
+                                            <small class="text-muted">(1,932.19)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>6.19</span>
+                                            <small class="text-muted">(14.76)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>26.73</strong>
+                                            <small class="text-muted">(178.51)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="badge bg-success">Active</span>
+                                    </td>
+                                </tr>
+
+                <!-- TEXAS Territory -->
+                <tr class="territory-row" data-level="1" data-id="texas">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                            <button class="btn btn-sm btn-link p-0 me-2 expand-btn" onclick="toggleRow('texas')">
+                                                <i class="fas fa-plus-square text-primary"></i>
+                                            </button>
+                                            <div class="territory-icon me-2">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                            <strong>TEXAS</strong>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>6.00</span>
+                                            <small class="text-muted">(41)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>49.38</span>
+                                            <small class="text-muted">(582.42)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>6.26</span>
+                                            <small class="text-muted">(7.32)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>3.95</strong>
+                                            <small class="text-muted">(48.61)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="badge bg-warning">Growing</span>
+                                    </td>
+                                </tr>
+
+                <!-- NEW YORK Territory -->
+                <tr class="territory-row" data-level="1" data-id="newyork">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                            <button class="btn btn-sm btn-link p-0 me-2 expand-btn" onclick="toggleRow('newyork')">
+                                                <i class="fas fa-plus-square text-primary"></i>
+                                            </button>
+                                            <div class="territory-icon me-2">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                            <strong>NEW YORK</strong>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>52.00</span>
+                                            <small class="text-muted">(287)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>756.80</span>
+                                            <small class="text-muted">(2,234.50)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>4.85</span>
+                                            <small class="text-muted">(28.45)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>67.85</strong>
+                                            <small class="text-muted">(398.75)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="badge bg-success">Active</span>
+                                    </td>
+                                </tr>
+
+                <!-- FLORIDA Territory -->
+                <tr class="territory-row" data-level="1" data-id="florida">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                            <button class="btn btn-sm btn-link p-0 me-2 expand-btn" onclick="toggleRow('florida')">
+                                                <i class="fas fa-plus-square text-primary"></i>
+                                            </button>
+                                            <div class="territory-icon me-2">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                            <strong>FLORIDA</strong>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>37.00</span>
+                                            <small class="text-muted">(26)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>258.05</span>
+                                            <small class="text-muted">(875.95)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>0.75</span>
+                                            <small class="text-muted">(7.18)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>17.68</strong>
+                                            <small class="text-muted">(139.11)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="badge bg-info">New</span>
+                                    </td>
+                                </tr>
+
+                                <!-- Grand Total Row -->
+                                <tr class="table-success fw-bold">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="territory-icon me-2">
+                                                <i class="fas fa-calculator"></i>
+                                            </div>
+                                            <strong>GRAND TOTAL</strong>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>179.00</span>
+                                            <small class="text-muted">(797)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>1,729.08</span>
+                                            <small class="text-muted">(7,859.56)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="d-flex justify-content-between">
+                                            <span>25.20</span>
+                                            <small class="text-muted">(75.91)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-end">
+                                        <div class="d-flex justify-content-between">
+                                            <strong class="h5">147.26</strong>
+                                            <small class="text-muted">(694.83)</small>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="badge bg-success">Total</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Cards - Compact -->
+            <div class="row mt-3">
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card compact-stat">
+                        <div class="card-body text-center py-2">
+                            <div class="territory-icon-small mb-2">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h5 class="text-primary mb-1">4</h5>
+                            <small class="text-muted">Territories</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card compact-stat">
+                        <div class="card-body text-center py-2">
+                            <div class="store-icon-small mb-2">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <h5 class="text-success mb-1">12</h5>
+                            <small class="text-muted">Stores</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card compact-stat">
+                        <div class="card-body text-center py-2">
+                            <div class="metal-icon-small mb-2">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h5 class="text-warning mb-1">5</h5>
+                            <small class="text-muted">Categories</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card compact-stat">
+                        <div class="card-body text-center py-2">
+                            <div class="revenue-icon-small mb-2">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h5 class="text-info mb-1">₹1.47L</h5>
+                            <small class="text-muted">Daily Revenue</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <style>
+        .territory-icon,
+        .store-icon,
+        .metal-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8rem;
+        }
+        
+        .territory-icon {
+            background: var(--primary-gradient);
+        }
+        
+        .store-icon {
+            background: var(--info-gradient);
+        }
+        
+        .metal-icon {
+            background: var(--warning-gradient);
+        }
+        
+        .territory-icon-large,
+        .store-icon-large,
+        .metal-icon-large,
+        .revenue-icon-large {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 auto;
+        }
+        
+        .territory-icon-large {
+            background: var(--primary-gradient);
+        }
+        
+        .store-icon-large {
+            background: var(--success-gradient);
+        }
+        
+        .metal-icon-large {
+            background: var(--warning-gradient);
+        }
+        
+        .revenue-icon-large {
+            background: var(--info-gradient);
+        }
+        
+        .expand-btn {
+            transition: all 0.3s ease;
+        }
+        
+        .expand-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .territory-row,
+        .store-row,
+        .metal-row {
+            transition: all 0.3s ease;
+        }
+        
+        .territory-row:hover,
+        .store-row:hover,
+        .metal-row:hover {
+            background-color: var(--light-bg);
+        }
+        
+        .table tbody tr[data-level="2"] {
+            background-color: rgba(102, 126, 234, 0.05);
+        }
+        
+        .table tbody tr[data-level="3"] {
+            background-color: rgba(102, 126, 234, 0.1);
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .table-responsive {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .table thead th {
+            background: var(--light-bg);
+            border: none;
+            padding: 15px;
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .table tbody td {
+            padding: 8px;
+            border: none;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+            font-size: 0.9rem;
+        }
+
+        /* Compact Styles */
+        .compact-header {
+            margin-bottom: 0.5rem;
+        }
+
+        .compact-header .card-header {
+            padding: 0.75rem 1rem;
+        }
+
+        .compact-header .card-body {
+            padding: 0.5rem 1rem;
+        }
+
+        .compact-table .card-body {
+            padding: 0.5rem;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .compact-stat {
+            margin-bottom: 0.5rem;
+        }
+
+        .compact-stat .card-body {
+            padding: 0.75rem;
+        }
+
+        .territory-icon-small,
+        .store-icon-small,
+        .metal-icon-small,
+        .revenue-icon-small {
+            width: 35px;
+            height: 35px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+            margin: 0 auto;
+        }
+
+        .territory-icon-small {
+            background: var(--primary-gradient);
+        }
+
+        .store-icon-small {
+            background: var(--success-gradient);
+        }
+
+        .metal-icon-small {
+            background: var(--warning-gradient);
+        }
+
+        .revenue-icon-small {
+            background: var(--info-gradient);
+        }
+
+        /* Table compact styling */
+        .table-sm th,
+        .table-sm td {
+            padding: 0.5rem;
+        }
+
+        .table-sm .btn-sm {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+        }
+    </style>
+    
+    <script>
+        function toggleRow(id) {
+            const rows = document.querySelectorAll(`[data-parent="${id}"]`);
+            const btn = document.querySelector(`[onclick="toggleRow('${id}')"] i`);
+            
+            rows.forEach(row => {
+                if (row.classList.contains('d-none')) {
+                    row.classList.remove('d-none');
+                    btn.classList.remove('fa-plus-square');
+                    btn.classList.add('fa-minus-square');
+                } else {
+                    row.classList.add('d-none');
+                    btn.classList.remove('fa-minus-square');
+                    btn.classList.add('fa-plus-square');
+                    
+                    // Also collapse any nested rows
+                    const nestedRows = row.querySelectorAll('.expand-btn');
+                    nestedRows.forEach(nestedBtn => {
+                        const nestedId = nestedBtn.closest('tr').getAttribute('data-id');
+                        if (nestedId) {
+                            const nestedChildren = document.querySelectorAll(`[data-parent="${nestedId}"]`);
+                            nestedChildren.forEach(child => {
+                                child.classList.add('d-none');
+                            });
+                            nestedBtn.querySelector('i').classList.remove('fa-minus-square');
+                            nestedBtn.querySelector('i').classList.add('fa-plus-square');
+                        }
+                    });
+                }
+            });
+        }
+        
+        function expandAll() {
+            const allRows = document.querySelectorAll('.store-row, .metal-row');
+            const allBtns = document.querySelectorAll('.expand-btn i');
+            
+            allRows.forEach(row => row.classList.remove('d-none'));
+            allBtns.forEach(btn => {
+                btn.classList.remove('fa-plus-square');
+                btn.classList.add('fa-minus-square');
+            });
+        }
+        
+        function collapseAll() {
+            const allRows = document.querySelectorAll('.store-row, .metal-row');
+            const allBtns = document.querySelectorAll('.expand-btn i');
+            
+            allRows.forEach(row => row.classList.add('d-none'));
+            allBtns.forEach(btn => {
+                btn.classList.remove('fa-minus-square');
+                btn.classList.add('fa-plus-square');
+            });
+        }
+        
+        function changeTimeRange(days) {
+            const button = document.querySelector('[data-bs-toggle="dropdown"]');
+            const text = days === '7' ? 'Last 7 Days' : 
+                        days === '30' ? 'Last 30 Days' : 
+                        days === '90' ? 'Last 90 Days' : 'Last Year';
+            button.innerHTML = `<i class="fas fa-calendar-alt me-2"></i>${text}`;
+            
+            // Here you would typically make an API call to fetch data for the selected range
+            console.log(`Changing time range to ${days} days`);
+        }
+        
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click animations to expand buttons
+            const expandBtns = document.querySelectorAll('.expand-btn');
+            expandBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    this.style.transform = 'scale(0.9)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                });
+            });
+            
+            // Add hover effects to rows
+            const tableRows = document.querySelectorAll('tbody tr');
+            tableRows.forEach(row => {
+                row.addEventListener('mouseenter', function() {
+                    this.style.backgroundColor = 'rgba(102, 126, 234, 0.1)';
+                });
+                
+                row.addEventListener('mouseleave', function() {
+                    if (this.getAttribute('data-level') === '2') {
+                        this.style.backgroundColor = 'rgba(102, 126, 234, 0.05)';
+                    } else if (this.getAttribute('data-level') === '3') {
+                        this.style.backgroundColor = 'rgba(102, 126, 234, 0.1)';
+                    } else {
+                        this.style.backgroundColor = '';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

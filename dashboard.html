@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-brand">
+                <i class="fas fa-chart-line me-2"></i>AGPanel
+            </a>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav flex-column">
+                <!-- Main Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="dashboard.html">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                
+                <!-- User Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">
+                        <i class="nav-icon fas fa-users"></i>
+                        User Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        Role & Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="nav-icon fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                
+                <!-- Business Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="master-data.html">
+                        <i class="nav-icon fas fa-database"></i>
+                        Master Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales.html">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        Sales & Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-details.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Sales Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-territory-details.html">
+                        <i class="nav-icon fas fa-map-marked-alt"></i>
+                        Territory Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        Inventory Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Reports & Analytics
+                    </a>
+                </li>
+                
+                <!-- Discount Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval.html">
+                        <i class="nav-icon fas fa-percentage"></i>
+                        Discount Approval
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval-cards.html">
+                        <i class="nav-icon fas fa-credit-card"></i>
+                        Discount Cards
+                    </a>
+                </li>
+                
+                <!-- UI Components -->
+                <li class="nav-item">
+                    <a class="nav-link" href="forms.html">
+                        <i class="nav-icon fas fa-edit"></i>
+                        Forms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="nav-icon fas fa-table"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widgets.html">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        Widgets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">
+                        <i class="nav-icon fas fa-mouse-pointer"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="nav-icon fas fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabs.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        Tabs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accordion.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Accordion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <i class="nav-icon fas fa-id-card"></i>
+                        Cards
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alerts.html">
+                        <i class="nav-icon fas fa-exclamation-circle"></i>
+                        Alerts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progress.html">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        Progress
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modals.html">
+                        <i class="nav-icon fas fa-window-maximize"></i>
+                        Modals
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tooltips.html">
+                        <i class="nav-icon fas fa-comment"></i>
+                        Tooltips
+                    </a>
+                </li>
+                
+                <!-- Communication -->
+                <li class="nav-item">
+                    <a class="nav-link" href="inbox.html">
+                        <i class="nav-icon fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="nav-icon fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                
+                <!-- Project Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="nav-icon fas fa-columns"></i>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="nav-icon fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+                
+                <!-- System -->
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <i class="nav-icon fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logs.html">
+                        <i class="nav-icon fas fa-history"></i>
+                        Audit Logs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file-manager.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        File Manager
+                    </a>
+                </li>
+                
+                <!-- Onboarding & Support -->
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">
+                        <i class="nav-icon fas fa-person-walking-arrow-right"></i>
+                        Onboarding
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">
+                        <i class="nav-icon fas fa-circle-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                
+                <!-- Business Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="nav-icon fas fa-tags"></i>
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.html">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        Invoice
+                    </a>
+                </li>
+                
+                <!-- Utility Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blank.html">
+                        <i class="nav-icon fas fa-file"></i>
+                        Blank Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="access-denied.html">
+                        <i class="nav-icon fas fa-ban"></i>
+                        Access Denied
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="404.html">
+                        <i class="nav-icon fas fa-exclamation-triangle"></i>
+                        404 Error
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="500.html">
+                        <i class="nav-icon fas fa-times-circle"></i>
+                        500 Error
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <button class="btn btn-link d-md-none" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-left">
+                <div class="breadcrumb-container"></div>
+                <h1>Dashboard</h1>
+                <p class="text-muted mb-0">Welcome back, John! Here's what's happening with your business today.</p>
+            </div>
+            <div class="header-right">
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-calendar-alt me-2"></i>Last 30 days
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Last 7 days</a></li>
+                        <li><a class="dropdown-item" href="#">Last 30 days</a></li>
+                        <li><a class="dropdown-item" href="#">Last 90 days</a></li>
+                        <li><a class="dropdown-item" href="#">This year</a></li>
+                    </ul>
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div>
+                        <div class="fw-semibold">John Doe</div>
+                        <small class="text-muted">Administrator</small>
+                    </div>
+                    <div class="user-dropdown">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                        <a href="settings.html" class="dropdown-item">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" data-action="logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-value">$45,678</div>
+                    <div class="stat-label">Total Revenue</div>
+                    <div class="d-flex align-items-center mt-2">
+                        <span class="badge bg-success me-2">+12.5%</span>
+                        <small class="text-muted">vs last month</small>
+                    </div>
+                </div>
+                
+                <div class="stat-card success">
+                    <div class="stat-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="stat-value">1,234</div>
+                    <div class="stat-label">Total Orders</div>
+                    <div class="d-flex align-items-center mt-2">
+                        <span class="badge bg-success me-2">+8.2%</span>
+                        <small class="text-muted">vs last month</small>
+                    </div>
+                </div>
+                
+                <div class="stat-card warning">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-value">5,678</div>
+                    <div class="stat-label">Active Customers</div>
+                    <div class="d-flex align-items-center mt-2">
+                        <span class="badge bg-success me-2">+15.3%</span>
+                        <small class="text-muted">vs last month</small>
+                    </div>
+                </div>
+                
+                <div class="stat-card danger">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-value">$156</div>
+                    <div class="stat-label">Average Order Value</div>
+                    <div class="d-flex align-items-center mt-2">
+                        <span class="badge bg-danger me-2">-2.1%</span>
+                        <small class="text-muted">vs last month</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title">Sales Overview</h5>
+                                <div class="btn-group btn-group-sm">
+                                    <button class="btn btn-outline-primary active">Monthly</button>
+                                    <button class="btn btn-outline-primary">Weekly</button>
+                                    <button class="btn btn-outline-primary">Daily</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="salesChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Revenue by Channel</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="revenueChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Charts -->
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">New Customers</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="customersChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Top Products</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Sales</th>
+                                            <th>Revenue</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="product-icon me-2">
+                                                        <i class="fas fa-laptop"></i>
+                                                    </div>
+                                                    <span>Laptop Pro</span>
+                                                </div>
+                                            </td>
+                                            <td>234</td>
+                                            <td>$45,678</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="product-icon me-2">
+                                                        <i class="fas fa-mobile-alt"></i>
+                                                    </div>
+                                                    <span>Smartphone X</span>
+                                                </div>
+                                            </td>
+                                            <td>189</td>
+                                            <td>$32,456</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="product-icon me-2">
+                                                        <i class="fas fa-headphones"></i>
+                                                    </div>
+                                                    <span>Wireless Headphones</span>
+                                                </div>
+                                            </td>
+                                            <td>156</td>
+                                            <td>$12,789</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="product-icon me-2">
+                                                        <i class="fas fa-tablet-alt"></i>
+                                                    </div>
+                                                    <span>Tablet Air</span>
+                                                </div>
+                                            </td>
+                                            <td>98</td>
+                                            <td>$8,934</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">Recent Activity</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="activity-timeline">
+                                <div class="activity-item">
+                                    <div class="activity-icon bg-success">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h6>New Order Received</h6>
+                                        <p class="text-muted mb-1">Order #12345 from John Smith for $299.99</p>
+                                        <small class="text-muted">2 minutes ago</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="activity-item">
+                                    <div class="activity-icon bg-info">
+                                        <i class="fas fa-user-plus"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h6>New Customer Registered</h6>
+                                        <p class="text-muted mb-1">Sarah Johnson joined the platform</p>
+                                        <small class="text-muted">15 minutes ago</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="activity-item">
+                                    <div class="activity-icon bg-warning">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h6>Low Stock Alert</h6>
+                                        <p class="text-muted mb-1">Wireless Headphones - Only 5 units left</p>
+                                        <small class="text-muted">1 hour ago</small>
+                                    </div>
+                                </div>
+                                
+                                <div class="activity-item">
+                                    <div class="activity-icon bg-primary">
+                                        <i class="fas fa-percentage"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <h6>Discount Request</h6>
+                                        <p class="text-muted mb-1">New discount approval request from Marketing Team</p>
+                                        <small class="text-muted">2 hours ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <style>
+        .product-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        .activity-timeline {
+            position: relative;
+        }
+        
+        .activity-timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-color);
+        }
+        
+        .activity-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .activity-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+            margin-right: 20px;
+            position: relative;
+            z-index: 1;
+            border: 3px solid var(--light-bg);
+        }
+        
+        .activity-content h6 {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .btn-group .btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-brand"><i class="fas fa-chart-line me-2"></i>AGPanel</a>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav flex-column">
+                <!-- Main Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                
+                <!-- User Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">
+                        <i class="nav-icon fas fa-users"></i>
+                        User Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        Role & Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="nav-icon fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                
+                <!-- Business Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="master-data.html">
+                        <i class="nav-icon fas fa-database"></i>
+                        Master Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales.html">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        Sales & Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-details.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Sales Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-territory-details.html">
+                        <i class="nav-icon fas fa-map-marked-alt"></i>
+                        Territory Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        Inventory Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Reports & Analytics
+                    </a>
+                </li>
+                
+                <!-- Discount Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval.html">
+                        <i class="nav-icon fas fa-percentage"></i>
+                        Discount Approval
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval-cards.html">
+                        <i class="nav-icon fas fa-credit-card"></i>
+                        Discount Cards
+                    </a>
+                </li>
+                
+                <!-- UI Components -->
+                <li class="nav-item">
+                    <a class="nav-link" href="forms.html">
+                        <i class="nav-icon fas fa-edit"></i>
+                        Forms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="nav-icon fas fa-table"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widgets.html">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        Widgets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">
+                        <i class="nav-icon fas fa-mouse-pointer"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="nav-icon fas fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabs.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        Tabs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accordion.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Accordion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <i class="nav-icon fas fa-id-card"></i>
+                        Cards
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alerts.html">
+                        <i class="nav-icon fas fa-exclamation-circle"></i>
+                        Alerts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="progress.html" class="nav-link active">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        Progress
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modals.html">
+                        <i class="nav-icon fas fa-window-maximize"></i>
+                        Modals
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tooltips.html">
+                        <i class="nav-icon fas fa-comment"></i>
+                        Tooltips
+                    </a>
+                </li>
+                
+                <!-- Communication -->
+                <li class="nav-item">
+                    <a class="nav-link" href="inbox.html">
+                        <i class="nav-icon fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="nav-icon fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                
+                <!-- Project Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="nav-icon fas fa-columns"></i>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="nav-icon fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+                
+                <!-- System -->
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <i class="nav-icon fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logs.html">
+                        <i class="nav-icon fas fa-history"></i>
+                        Audit Logs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file-manager.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        File Manager
+                    </a>
+                </li>
+                
+                <!-- Onboarding & Support -->
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">
+                        <i class="nav-icon fas fa-person-walking-arrow-right"></i>
+                        Onboarding
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">
+                        <i class="nav-icon fas fa-circle-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                
+                <!-- Business Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="nav-icon fas fa-tags"></i>
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.html">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        Invoice
+                    </a>
+                </li>
+                
+                <!-- Utility Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blank.html">
+                        <i class="nav-icon fas fa-file"></i>
+                        Blank Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="access-denied.html">
+                        <i class="nav-icon fas fa-ban"></i>
+                        Access Denied
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="404.html">
+                        <i class="nav-icon fas fa-exclamation-triangle"></i>
+                        404 Error
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="500.html">
+                        <i class="nav-icon fas fa-times-circle"></i>
+                        500 Error
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main-content">
+        <header class="header">
+            <button class="btn btn-link d-md-none" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-left">
+                <div class="breadcrumb-container"></div>
+                <h1>Progress</h1>
+                <p class="text-muted mb-0">Progress bars, spinners, and loading indicators with various styles and animations.</p>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div>
+                        <div class="fw-semibold">John Doe</div>
+                        <small class="text-muted">Administrator</small>
+                    </div>
+                    <div class="user-dropdown">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                        <a href="settings.html" class="dropdown-item">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" data-action="logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- Basic Progress Bars -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Basic Progress Bars</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Default Progress</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Progress with Label</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Progress without Label</label>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Progress with Stripes</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Animated Progress</label>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colored Progress Bars -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Colored Progress Bars</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Primary Progress</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Success Progress</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Warning Progress</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Danger Progress</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Info Progress</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multiple Progress Bars -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Multiple Progress Bars</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Stacked Progress</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mixed Progress</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bar Sizes -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Progress Bar Sizes</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Small Progress (8px)</label>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Default Progress (16px)</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Large Progress (24px)</label>
+                        <div class="progress" style="height: 24px;">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Extra Large Progress (32px)</label>
+                        <div class="progress" style="height: 32px;">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Circular Progress -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Circular Progress</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <div class="circular-progress" data-percentage="25">
+                                    <div class="circular-progress-inner">
+                                        <span class="circular-progress-text">25%</span>
+                                    </div>
+                                </div>
+                                <h6 class="mt-2">Basic Progress</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <div class="circular-progress" data-percentage="50">
+                                    <div class="circular-progress-inner">
+                                        <span class="circular-progress-text">50%</span>
+                                    </div>
+                                </div>
+                                <h6 class="mt-2">Half Progress</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <div class="circular-progress" data-percentage="75">
+                                    <div class="circular-progress-inner">
+                                        <span class="circular-progress-text">75%</span>
+                                    </div>
+                                </div>
+                                <h6 class="mt-2">Three Quarter</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <div class="circular-progress" data-percentage="100">
+                                    <div class="circular-progress-inner">
+                                        <span class="circular-progress-text">100%</span>
+                                    </div>
+                                </div>
+                                <h6 class="mt-2">Complete</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spinners -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Spinners</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h6>Border Spinners</h6>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Default spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Primary spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-border text-success" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Success spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-border text-warning" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Warning spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-border text-danger" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Danger spinner</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Grow Spinners</h6>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-grow" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Default grow spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-grow text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Primary grow spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-grow text-success" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Success grow spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-grow text-warning" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Warning grow spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-grow text-danger" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Danger grow spinner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spinner Sizes -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Spinner Sizes</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h6>Border Spinner Sizes</h6>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-border spinner-border-sm" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Small spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Default spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Large spinner</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Grow Spinner Sizes</h6>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-grow spinner-grow-sm" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Small grow spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-grow" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Default grow spinner</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <span>Large grow spinner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress with Icons -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Progress with Icons</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="fw-semibold">
+                                <i class="fas fa-download text-primary me-2"></i>
+                                Download Progress
+                            </span>
+                            <span class="text-muted">65%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="fw-semibold">
+                                <i class="fas fa-upload text-success me-2"></i>
+                                Upload Progress
+                            </span>
+                            <span class="text-muted">85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="fw-semibold">
+                                <i class="fas fa-sync text-warning me-2"></i>
+                                Sync Progress
+                            </span>
+                            <span class="text-muted">45%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="fw-semibold">
+                                <i class="fas fa-cog text-info me-2"></i>
+                                Processing
+                            </span>
+                            <span class="text-muted">90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Progress -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Interactive Progress</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h6>Progress Controls</h6>
+                            <div class="mb-3">
+                                <label class="form-label">Progress Value</label>
+                                <input type="range" class="form-range" id="progressRange" min="0" max="100" value="50" oninput="updateProgress(this.value)">
+                            </div>
+                            <div class="mb-3">
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" id="interactiveProgress" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 d-md-flex">
+                                <button class="btn btn-primary btn-sm" onclick="startProgress()">
+                                    <i class="fas fa-play me-1"></i>Start
+                                </button>
+                                <button class="btn btn-warning btn-sm" onclick="pauseProgress()">
+                                    <i class="fas fa-pause me-1"></i>Pause
+                                </button>
+                                <button class="btn btn-danger btn-sm" onclick="resetProgress()">
+                                    <i class="fas fa-stop me-1"></i>Reset
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Progress Examples</h6>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="fw-semibold">File Transfer</span>
+                                    <span class="text-muted" id="transferPercent">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" id="transferProgress" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="fw-semibold">Data Processing</span>
+                                    <span class="text-muted" id="processPercent">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" id="processProgress" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="fw-semibold">System Backup</span>
+                                    <span class="text-muted" id="backupPercent">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" id="backupProgress" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Generator -->
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Progress Generator</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h6>Generate Progress</h6>
+                            <form id="progressGenerator">
+                                <div class="mb-3">
+                                    <label class="form-label">Progress Type</label>
+                                    <select class="form-select" id="progressType">
+                                        <option value="basic">Basic</option>
+                                        <option value="striped">Striped</option>
+                                        <option value="animated">Animated</option>
+                                        <option value="circular">Circular</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Progress Color</label>
+                                    <select class="form-select" id="progressColor">
+                                        <option value="primary">Primary</option>
+                                        <option value="success">Success</option>
+                                        <option value="warning">Warning</option>
+                                        <option value="danger">Danger</option>
+                                        <option value="info">Info</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Progress Value (%)</label>
+                                    <input type="number" class="form-control" id="progressValue" min="0" max="100" value="50">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Progress Label</label>
+                                    <input type="text" class="form-control" id="progressLabel" placeholder="Enter progress label">
+                                </div>
+                                <button type="button" class="btn btn-primary" onclick="generateProgress()">
+                                    <i class="fas fa-plus me-2"></i>Generate Progress
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Generated Progress</h6>
+                            <div id="generatedProgress">
+                                <p class="text-muted">No progress generated yet. Use the form to create progress bars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        let progressInterval;
+        let isProgressRunning = false;
+
+        function updateProgress(value) {
+            const progressBar = document.getElementById('interactiveProgress');
+            progressBar.style.width = value + '%';
+            progressBar.setAttribute('aria-valuenow', value);
+            progressBar.textContent = value + '%';
+        }
+
+        function startProgress() {
+            if (isProgressRunning) return;
+            
+            isProgressRunning = true;
+            let progress = 0;
+            
+            progressInterval = setInterval(() => {
+                progress += 2;
+                if (progress > 100) {
+                    progress = 100;
+                    clearInterval(progressInterval);
+                    isProgressRunning = false;
+                }
+                updateProgress(progress);
+            }, 100);
+        }
+
+        function pauseProgress() {
+            if (progressInterval) {
+                clearInterval(progressInterval);
+                isProgressRunning = false;
+            }
+        }
+
+        function resetProgress() {
+            if (progressInterval) {
+                clearInterval(progressInterval);
+                isProgressRunning = false;
+            }
+            updateProgress(0);
+        }
+
+        function generateProgress() {
+            const type = document.getElementById('progressType').value;
+            const color = document.getElementById('progressColor').value;
+            const value = document.getElementById('progressValue').value;
+            const label = document.getElementById('progressLabel').value;
+
+            if (!value || value < 0 || value > 100) {
+                showAlert('Please enter a valid progress value (0-100).', 'warning');
+                return;
+            }
+
+            const progressId = 'progress-' + Date.now();
+            let progressHTML = '';
+
+            if (type === 'circular') {
+                progressHTML = `
+                    <div class="text-center mb-3">
+                        <div class="circular-progress" data-percentage="${value}">
+                            <div class="circular-progress-inner">
+                                <span class="circular-progress-text">${value}%</span>
+                            </div>
+                        </div>
+                        ${label ? `<h6 class="mt-2">${label}</h6>` : ''}
+                    </div>
+                `;
+            } else {
+                const stripedClass = type === 'striped' ? 'progress-bar-striped' : '';
+                const animatedClass = type === 'animated' ? 'progress-bar-striped progress-bar-animated' : '';
+                
+                progressHTML = `
+                    <div class="mb-3">
+                        ${label ? `<label class="form-label">${label}</label>` : ''}
+                        <div class="progress">
+                            <div class="progress-bar bg-${color} ${stripedClass} ${animatedClass}" role="progressbar" style="width: ${value}%" aria-valuenow="${value}" aria-valuemin="0" aria-valuemax="100">${value}%</div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            const container = document.getElementById('generatedProgress');
+            if (container.querySelector('.text-muted')) {
+                container.innerHTML = '';
+            }
+            
+            container.insertAdjacentHTML('beforeend', progressHTML);
+            
+            // Clear form
+            document.getElementById('progressValue').value = '50';
+            document.getElementById('progressLabel').value = '';
+            
+            showAlert('Progress generated successfully!', 'success');
+        }
+
+        // Simulate progress animations
+        function simulateProgress(elementId, percentId, duration = 3000) {
+            const element = document.getElementById(elementId);
+            const percentElement = document.getElementById(percentId);
+            let progress = 0;
+            
+            const interval = setInterval(() => {
+                progress += 2;
+                if (progress > 100) {
+                    progress = 100;
+                    clearInterval(interval);
+                }
+                
+                element.style.width = progress + '%';
+                element.setAttribute('aria-valuenow', progress);
+                percentElement.textContent = progress + '%';
+            }, duration / 50);
+        }
+
+        // Initialize circular progress
+        function initCircularProgress() {
+            const circularProgresses = document.querySelectorAll('.circular-progress');
+            circularProgresses.forEach(progress => {
+                const percentage = progress.dataset.percentage;
+                const circle = progress.querySelector('.circular-progress-inner');
+                const text = progress.querySelector('.circular-progress-text');
+                
+                // Create SVG circle
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('width', '120');
+                svg.setAttribute('height', '120');
+                svg.setAttribute('class', 'circular-progress-svg');
+                
+                const circleBg = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                circleBg.setAttribute('cx', '60');
+                circleBg.setAttribute('cy', '60');
+                circleBg.setAttribute('r', '50');
+                circleBg.setAttribute('fill', 'none');
+                circleBg.setAttribute('stroke', '#e9ecef');
+                circleBg.setAttribute('stroke-width', '8');
+                
+                const circleProgress = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                circleProgress.setAttribute('cx', '60');
+                circleProgress.setAttribute('cy', '60');
+                circleProgress.setAttribute('r', '50');
+                circleProgress.setAttribute('fill', 'none');
+                circleProgress.setAttribute('stroke', '#667eea');
+                circleProgress.setAttribute('stroke-width', '8');
+                circleProgress.setAttribute('stroke-linecap', 'round');
+                circleProgress.setAttribute('stroke-dasharray', '314');
+                circleProgress.setAttribute('stroke-dashoffset', '314');
+                
+                svg.appendChild(circleBg);
+                svg.appendChild(circleProgress);
+                progress.appendChild(svg);
+                
+                // Animate progress
+                setTimeout(() => {
+                    const offset = 314 - (314 * percentage / 100);
+                    circleProgress.style.strokeDashoffset = offset;
+                }, 100);
+            });
+        }
+
+        // Start progress simulations when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initCircularProgress();
+            
+            setTimeout(() => {
+                simulateProgress('transferProgress', 'transferPercent', 2000);
+            }, 1000);
+            
+            setTimeout(() => {
+                simulateProgress('processProgress', 'processPercent', 2500);
+            }, 1500);
+            
+            setTimeout(() => {
+                simulateProgress('backupProgress', 'backupPercent', 3000);
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

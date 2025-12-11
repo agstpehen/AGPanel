@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-brand"><i class="fas fa-chart-line me-2"></i>AGPanel</a>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav flex-column">
+                <!-- Main Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                
+                <!-- User Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">
+                        <i class="nav-icon fas fa-users"></i>
+                        User Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        Role & Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="nav-icon fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                
+                <!-- Business Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="master-data.html">
+                        <i class="nav-icon fas fa-database"></i>
+                        Master Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales.html">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        Sales & Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-details.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Sales Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-territory-details.html">
+                        <i class="nav-icon fas fa-map-marked-alt"></i>
+                        Territory Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        Inventory Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Reports & Analytics
+                    </a>
+                </li>
+                
+                <!-- Discount Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval.html">
+                        <i class="nav-icon fas fa-percentage"></i>
+                        Discount Approval
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval-cards.html">
+                        <i class="nav-icon fas fa-credit-card"></i>
+                        Discount Cards
+                    </a>
+                </li>
+                
+                <!-- UI Components -->
+                <li class="nav-item">
+                    <a class="nav-link" href="forms.html">
+                        <i class="nav-icon fas fa-edit"></i>
+                        Forms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="nav-icon fas fa-table"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widgets.html">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        Widgets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">
+                        <i class="nav-icon fas fa-mouse-pointer"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="nav-icon fas fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="tabs.html" class="nav-link active">
+                        <i class="nav-icon fas fa-folder"></i>
+                        Tabs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accordion.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Accordion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <i class="nav-icon fas fa-id-card"></i>
+                        Cards
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alerts.html">
+                        <i class="nav-icon fas fa-exclamation-circle"></i>
+                        Alerts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progress.html">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        Progress
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modals.html">
+                        <i class="nav-icon fas fa-window-maximize"></i>
+                        Modals
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tooltips.html">
+                        <i class="nav-icon fas fa-comment"></i>
+                        Tooltips
+                    </a>
+                </li>
+                
+                <!-- Communication -->
+                <li class="nav-item">
+                    <a class="nav-link" href="inbox.html">
+                        <i class="nav-icon fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="nav-icon fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                
+                <!-- Project Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="nav-icon fas fa-columns"></i>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="nav-icon fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+                
+                <!-- System -->
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <i class="nav-icon fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logs.html">
+                        <i class="nav-icon fas fa-history"></i>
+                        Audit Logs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file-manager.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        File Manager
+                    </a>
+                </li>
+                
+                <!-- Onboarding & Support -->
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">
+                        <i class="nav-icon fas fa-person-walking-arrow-right"></i>
+                        Onboarding
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">
+                        <i class="nav-icon fas fa-circle-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                
+                <!-- Business Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="nav-icon fas fa-tags"></i>
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.html">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        Invoice
+                    </a>
+                </li>
+                
+                <!-- Utility Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blank.html">
+                        <i class="nav-icon fas fa-file"></i>
+                        Blank Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="access-denied.html">
+                        <i class="nav-icon fas fa-ban"></i>
+                        Access Denied
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="404.html">
+                        <i class="nav-icon fas fa-exclamation-triangle"></i>
+                        404 Error
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="500.html">
+                        <i class="nav-icon fas fa-times-circle"></i>
+                        500 Error
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main-content">
+        <header class="header">
+            <button class="btn btn-link d-md-none" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-left">
+                <div class="breadcrumb-container"></div>
+                <h1>Tabs</h1>
+                <p class="text-muted mb-0">Tabbed content examples with various styles and layouts.</p>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div>
+                        <div class="fw-semibold">John Doe</div>
+                        <small class="text-muted">Administrator</small>
+                    </div>
+                    <div class="user-dropdown">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                        <a href="settings.html" class="dropdown-item">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" data-action="logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- Basic Tabs -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Basic Tabs</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="nav nav-tabs" id="basicTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab">
+                                <i class="fas fa-home me-2"></i>Home
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab">
+                                <i class="fas fa-user me-2"></i>Profile
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab">
+                                <i class="fas fa-envelope me-2"></i>Contact
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab">
+                                <i class="fas fa-cog me-2"></i>Settings
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="basicTabsContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel">
+                            <div class="p-4">
+                                <h5>Welcome Home</h5>
+                                <p>This is the home tab content. Here you can display important information, recent activities, or quick actions.</p>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Recent Activity</h6>
+                                                <p class="card-text">View your recent activities and updates.</p>
+                                                <button class="btn btn-primary btn-sm">View All</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Quick Actions</h6>
+                                                <p class="card-text">Access frequently used features quickly.</p>
+                                                <button class="btn btn-success btn-sm">Get Started</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel">
+                            <div class="p-4">
+                                <h5>User Profile</h5>
+                                <p>Manage your profile information and preferences.</p>
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">First Name</label>
+                                            <input type="text" class="form-control" value="John">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" value="Doe">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" value="john.doe@example.com">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label class="form-label">Bio</label>
+                                            <textarea class="form-control" rows="3">Software developer with 5+ years of experience.</textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel">
+                            <div class="p-4">
+                                <h5>Contact Information</h5>
+                                <p>Get in touch with us or send us a message.</p>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-phone text-primary mb-3" style="font-size: 2rem;"></i>
+                                                <h6>Phone</h6>
+                                                <p class="text-muted">+1 (555) 123-4567</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-envelope text-success mb-3" style="font-size: 2rem;"></i>
+                                                <h6>Email</h6>
+                                                <p class="text-muted">info@example.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="settings" role="tabpanel">
+                            <div class="p-4">
+                                <h5>Settings</h5>
+                                <p>Configure your application settings and preferences.</p>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="notifications" checked>
+                                            <label class="form-check-label" for="notifications">Enable Notifications</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="darkMode">
+                                            <label class="form-check-label" for="darkMode">Dark Mode</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pills Tabs -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Pills Tabs</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="nav nav-pills" id="pillsTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#pills-dashboard" type="button" role="tab">
+                                <i class="fas fa-tachometer-alt me-2"></i>Dashboard
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-analytics-tab" data-bs-toggle="pill" data-bs-target="#pills-analytics" type="button" role="tab">
+                                <i class="fas fa-chart-bar me-2"></i>Analytics
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-reports-tab" data-bs-toggle="pill" data-bs-target="#pills-reports" type="button" role="tab">
+                                <i class="fas fa-file-alt me-2"></i>Reports
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-tools-tab" data-bs-toggle="pill" data-bs-target="#pills-tools" type="button" role="tab">
+                                <i class="fas fa-tools me-2"></i>Tools
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pillsTabsContent">
+                        <div class="tab-pane fade show active" id="pills-dashboard" role="tabpanel">
+                            <div class="p-4">
+                                <h5>Dashboard Overview</h5>
+                                <p>Monitor your key metrics and performance indicators.</p>
+                                <div class="row g-3">
+                                    <div class="col-md-3">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <h4 class="text-primary">1,247</h4>
+                                                <p class="text-muted mb-0">Total Users</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <h4 class="text-success">$45,230</h4>
+                                                <p class="text-muted mb-0">Revenue</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <h4 class="text-warning">892</h4>
+                                                <p class="text-muted mb-0">Orders</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <h4 class="text-info">156</h4>
+                                                <p class="text-muted mb-0">Products</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-analytics" role="tabpanel">
+                            <div class="p-4">
+                                <h5>Analytics</h5>
+                                <p>Analyze your data and gain insights into your business performance.</p>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Traffic Sources</h6>
+                                                <div class="progress mb-2" style="height: 8px;">
+                                                    <div class="progress-bar bg-primary" style="width: 45%"></div>
+                                                </div>
+                                                <small class="text-muted">Direct: 45%</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Conversion Rate</h6>
+                                                <div class="progress mb-2" style="height: 8px;">
+                                                    <div class="progress-bar bg-success" style="width: 72%"></div>
+                                                </div>
+                                                <small class="text-muted">72%</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-reports" role="tabpanel">
+                            <div class="p-4">
+                                <h5>Reports</h5>
+                                <p>Generate and view detailed reports for your business.</p>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1">Monthly Sales Report</h6>
+                                            <small>3 days ago</small>
+                                        </div>
+                                        <p class="mb-1">Comprehensive sales analysis for the current month.</p>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1">User Activity Report</h6>
+                                            <small>1 week ago</small>
+                                        </div>
+                                        <p class="mb-1">Detailed user engagement and activity metrics.</p>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1">Financial Summary</h6>
+                                            <small>2 weeks ago</small>
+                                        </div>
+                                        <p class="mb-1">Complete financial overview and projections.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-tools" role="tabpanel">
+                            <div class="p-4">
+                                <h5>Tools</h5>
+                                <p>Access various tools and utilities to enhance your workflow.</p>
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <i class="fas fa-calculator text-primary mb-3" style="font-size: 2rem;"></i>
+                                                <h6>Calculator</h6>
+                                                <p class="text-muted">Quick calculations</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <i class="fas fa-clock text-success mb-3" style="font-size: 2rem;"></i>
+                                                <h6>Timer</h6>
+                                                <p class="text-muted">Time tracking</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card text-center">
+                                            <div class="card-body">
+                                                <i class="fas fa-palette text-warning mb-3" style="font-size: 2rem;"></i>
+                                                <h6>Color Picker</h6>
+                                                <p class="text-muted">Color selection</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical Tabs -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Vertical Tabs</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="nav flex-column nav-pills" id="verticalTabs" role="tablist">
+                                <button class="nav-link active" id="v-general-tab" data-bs-toggle="pill" data-bs-target="#v-general" type="button" role="tab">
+                                    <i class="fas fa-cog me-2"></i>General
+                                </button>
+                                <button class="nav-link" id="v-security-tab" data-bs-toggle="pill" data-bs-target="#v-security" type="button" role="tab">
+                                    <i class="fas fa-shield-alt me-2"></i>Security
+                                </button>
+                                <button class="nav-link" id="v-privacy-tab" data-bs-toggle="pill" data-bs-target="#v-privacy" type="button" role="tab">
+                                    <i class="fas fa-lock me-2"></i>Privacy
+                                </button>
+                                <button class="nav-link" id="v-advanced-tab" data-bs-toggle="pill" data-bs-target="#v-advanced" type="button" role="tab">
+                                    <i class="fas fa-sliders-h me-2"></i>Advanced
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="tab-content" id="verticalTabsContent">
+                                <div class="tab-pane fade show active" id="v-general" role="tabpanel">
+                                    <h5>General Settings</h5>
+                                    <p>Configure basic application settings and preferences.</p>
+                                    <form>
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">Application Name</label>
+                                                <input type="text" class="form-control" value="AGPanel">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Language</label>
+                                                <select class="form-select">
+                                                    <option value="en" selected>English</option>
+                                                    <option value="es">Spanish</option>
+                                                    <option value="fr">French</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Timezone</label>
+                                                <select class="form-select">
+                                                    <option value="UTC">UTC</option>
+                                                    <option value="America/New_York" selected>Eastern Time</option>
+                                                    <option value="America/Chicago">Central Time</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Date Format</label>
+                                                <select class="form-select">
+                                                    <option value="MM/DD/YYYY" selected>MM/DD/YYYY</option>
+                                                    <option value="DD/MM/YYYY">DD/MM/YYYY</option>
+                                                    <option value="YYYY-MM-DD">YYYY-MM-DD</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="v-security" role="tabpanel">
+                                    <h5>Security Settings</h5>
+                                    <p>Manage security preferences and authentication settings.</p>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="twoFactor" checked>
+                                                <label class="form-check-label" for="twoFactor">Two-Factor Authentication</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="sessionTimeout">
+                                                <label class="form-check-label" for="sessionTimeout">Session Timeout</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="passwordPolicy" checked>
+                                                <label class="form-check-label" for="passwordPolicy">Password Policy</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="loginLogs">
+                                                <label class="form-check-label" for="loginLogs">Login Logs</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-privacy" role="tabpanel">
+                                    <h5>Privacy Settings</h5>
+                                    <p>Control your privacy and data sharing preferences.</p>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="dataCollection" checked>
+                                                <label class="form-check-label" for="dataCollection">Data Collection</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="analytics">
+                                                <label class="form-check-label" for="analytics">Analytics Tracking</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="cookies" checked>
+                                                <label class="form-check-label" for="cookies">Cookie Consent</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="gdpr">
+                                                <label class="form-check-label" for="gdpr">GDPR Compliance</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-advanced" role="tabpanel">
+                                    <h5>Advanced Settings</h5>
+                                    <p>Configure advanced features and system preferences.</p>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Cache Duration</label>
+                                            <select class="form-select">
+                                                <option value="1">1 Hour</option>
+                                                <option value="24" selected>24 Hours</option>
+                                                <option value="168">1 Week</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Log Level</label>
+                                            <select class="form-select">
+                                                <option value="error">Error</option>
+                                                <option value="warning">Warning</option>
+                                                <option value="info" selected>Info</option>
+                                                <option value="debug">Debug</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">API Rate Limit</label>
+                                            <input type="number" class="form-control" value="1000">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Session Storage</label>
+                                            <select class="form-select">
+                                                <option value="database" selected>Database</option>
+                                                <option value="redis">Redis</option>
+                                                <option value="memory">Memory</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Tabs -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">Dynamic Tabs</h5>
+                        <button class="btn btn-primary btn-sm" onclick="addNewTab()">
+                            <i class="fas fa-plus me-2"></i>Add Tab
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul class="nav nav-tabs" id="dynamicTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tab-1" data-bs-toggle="tab" data-bs-target="#content-1" type="button" role="tab">
+                                Tab 1
+                                <button class="btn-close btn-close-sm ms-2" onclick="removeTab(1)" style="font-size: 0.7rem;"></button>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab-2" data-bs-toggle="tab" data-bs-target="#content-2" type="button" role="tab">
+                                Tab 2
+                                <button class="btn-close btn-close-sm ms-2" onclick="removeTab(2)" style="font-size: 0.7rem;"></button>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="dynamicTabsContent">
+                        <div class="tab-pane fade show active" id="content-1" role="tabpanel">
+                            <div class="p-4">
+                                <h5>Dynamic Tab 1</h5>
+                                <p>This is the first dynamic tab. You can add or remove tabs dynamically.</p>
+                                <div class="alert alert-info">
+                                    <i class="fas fa-info-circle me-2"></i>
+                                    Click the "Add Tab" button to create new tabs, or click the X button to remove tabs.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="content-2" role="tabpanel">
+                            <div class="p-4">
+                                <h5>Dynamic Tab 2</h5>
+                                <p>This is the second dynamic tab. Each tab can contain different content.</p>
+                                <div class="alert alert-success">
+                                    <i class="fas fa-check-circle me-2"></i>
+                                    Dynamic tabs are working perfectly!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabbed Forms -->
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Tabbed Forms</h5>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <ul class="nav nav-tabs" id="formTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab">
+                                    <i class="fas fa-user me-2"></i>Personal Info
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-form" type="button" role="tab">
+                                    <i class="fas fa-address-book me-2"></i>Contact Details
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="preferences-tab" data-bs-toggle="tab" data-bs-target="#preferences" type="button" role="tab">
+                                    <i class="fas fa-cog me-2"></i>Preferences
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="formTabsContent">
+                            <div class="tab-pane fade show active" id="personal" role="tabpanel">
+                                <div class="p-4">
+                                    <h5>Personal Information</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">First Name</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Date of Birth</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Gender</label>
+                                            <select class="form-select">
+                                                <option value="">Select Gender</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact-form" role="tabpanel">
+                                <div class="p-4">
+                                    <h5>Contact Details</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label class="form-label">Address</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">City</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">ZIP Code</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="preferences" role="tabpanel">
+                                <div class="p-4">
+                                    <h5>Preferences</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Language</label>
+                                            <select class="form-select">
+                                                <option value="en" selected>English</option>
+                                                <option value="es">Spanish</option>
+                                                <option value="fr">French</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Timezone</label>
+                                            <select class="form-select">
+                                                <option value="UTC">UTC</option>
+                                                <option value="America/New_York" selected>Eastern Time</option>
+                                                <option value="America/Chicago">Central Time</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="emailNotifications" checked>
+                                                <label class="form-check-label" for="emailNotifications">Email Notifications</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" id="smsNotifications">
+                                                <label class="form-check-label" for="smsNotifications">SMS Notifications</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 border-top">
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn btn-outline-secondary" onclick="previousTab()">
+                                    <i class="fas fa-arrow-left me-2"></i>Previous
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="nextTab()">
+                                    Next <i class="fas fa-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        let tabCounter = 2;
+
+        function addNewTab() {
+            tabCounter++;
+            const tabId = `tab-${tabCounter}`;
+            const contentId = `content-${tabCounter}`;
+            
+            // Add tab button
+            const tabButton = document.createElement('li');
+            tabButton.className = 'nav-item';
+            tabButton.setAttribute('role', 'presentation');
+            tabButton.innerHTML = `
+                <button class="nav-link" id="${tabId}" data-bs-toggle="tab" data-bs-target="#${contentId}" type="button" role="tab">
+                    Tab ${tabCounter}
+                    <button class="btn-close btn-close-sm ms-2" onclick="removeTab(${tabCounter})" style="font-size: 0.7rem;"></button>
+                </button>
+            `;
+            
+            // Add tab content
+            const tabContent = document.createElement('div');
+            tabContent.className = 'tab-pane fade';
+            tabContent.id = contentId;
+            tabContent.setAttribute('role', 'tabpanel');
+            tabContent.innerHTML = `
+                <div class="p-4">
+                    <h5>Dynamic Tab ${tabCounter}</h5>
+                    <p>This is dynamically created tab ${tabCounter}. You can add any content here.</p>
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        This tab was created dynamically!
+                    </div>
+                </div>
+            `;
+            
+            // Append to DOM
+            document.getElementById('dynamicTabs').appendChild(tabButton);
+            document.getElementById('dynamicTabsContent').appendChild(tabContent);
+            
+            // Show the new tab
+            const newTab = new bootstrap.Tab(document.getElementById(tabId));
+            newTab.show();
+        }
+
+        function removeTab(tabNumber) {
+            if (document.querySelectorAll('#dynamicTabs .nav-item').length <= 1) {
+                showAlert('Cannot remove the last tab!', 'warning');
+                return;
+            }
+            
+            if (confirm(`Are you sure you want to remove Tab ${tabNumber}?`)) {
+                // Remove tab button
+                const tabButton = document.getElementById(`tab-${tabNumber}`);
+                tabButton.closest('.nav-item').remove();
+                
+                // Remove tab content
+                const tabContent = document.getElementById(`content-${tabNumber}`);
+                tabContent.remove();
+                
+                // Activate first remaining tab
+                const firstTab = document.querySelector('#dynamicTabs .nav-link');
+                if (firstTab) {
+                    const firstTabInstance = new bootstrap.Tab(firstTab);
+                    firstTabInstance.show();
+                }
+                
+                showAlert(`Tab ${tabNumber} removed successfully!`, 'success');
+            }
+        }
+
+        function nextTab() {
+            const activeTab = document.querySelector('#formTabs .nav-link.active');
+            const nextTab = activeTab.closest('.nav-item').nextElementSibling;
+            
+            if (nextTab) {
+                const nextTabButton = nextTab.querySelector('.nav-link');
+                const nextTabInstance = new bootstrap.Tab(nextTabButton);
+                nextTabInstance.show();
+            }
+        }
+
+        function previousTab() {
+            const activeTab = document.querySelector('#formTabs .nav-link.active');
+            const prevTab = activeTab.closest('.nav-item').previousElementSibling;
+            
+            if (prevTab) {
+                const prevTabButton = prevTab.querySelector('.nav-link');
+                const prevTabInstance = new bootstrap.Tab(prevTabButton);
+                prevTabInstance.show();
+            }
+        }
+    </script>
+</body>
+</html>

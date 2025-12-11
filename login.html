@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card fade-in-up">
+            <div class="login-header">
+                <h1><i class="fas fa-chart-line me-2"></i>AGPanel</h1>
+                <p>Welcome back! Please sign in to your account</p>
+            </div>
+            
+            <form class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid email address.
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid password.
+                    </div>
+                </div>
+                
+                <div class="form-group form-check d-flex justify-content-between align-items-center">
+                    <div>
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label class="form-check-label" for="remember">
+                            Remember me
+                        </label>
+                    </div>
+                    <a href="#" class="text-decoration-none" style="color: var(--primary-color);">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" onclick="handleLogin(event)">
+                    <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                </button>
+            </form>
+            
+            <div class="text-center mt-4">
+                <p class="text-muted">
+                    Don't have an account? 
+                    <a href="#" class="text-decoration-none" style="color: var(--primary-color);">Sign up here</a>
+                </p>
+            </div>
+            
+            <div class="login-footer text-center mt-4">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="login-stats-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <small class="text-muted mt-1">10K+ Users</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="login-stats-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <small class="text-muted mt-1">$2M+ Revenue</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="login-stats-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <small class="text-muted mt-1">500+ Stores</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            
+            const form = event.target.closest('form');
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                return;
+            }
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Simulate login process
+            const button = event.target;
+            const originalText = button.innerHTML;
+            button.innerHTML = '<span class="spinner"></span> Signing In...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                // Redirect to dashboard
+                window.location.href = 'dashboard.html';
+            }, 1500);
+        }
+        
+        // Add some visual effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add floating animation to login card
+            const card = document.querySelector('.login-card');
+            card.style.animation = 'fadeInUp 0.8s ease-out';
+            
+            // Add hover effects to form inputs
+            const inputs = document.querySelectorAll('.form-control');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.style.transform = 'scale(1.02)';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+    
+    <style>
+        .login-stats-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .form-group {
+            transition: all 0.3s ease;
+        }
+        
+        .login-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .login-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+    </style>
+</body>
+</html>
+

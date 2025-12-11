@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings & Configuration - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-brand"><i class="fas fa-chart-line me-2"></i>AGPanel</a>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav flex-column">
+                <!-- Main Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                
+                <!-- User Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">
+                        <i class="nav-icon fas fa-users"></i>
+                        User Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        Role & Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="nav-icon fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                
+                <!-- Business Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="master-data.html">
+                        <i class="nav-icon fas fa-database"></i>
+                        Master Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales.html">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        Sales & Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-details.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Sales Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-territory-details.html">
+                        <i class="nav-icon fas fa-map-marked-alt"></i>
+                        Territory Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        Inventory Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Reports & Analytics
+                    </a>
+                </li>
+                
+                <!-- Discount Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval.html">
+                        <i class="nav-icon fas fa-percentage"></i>
+                        Discount Approval
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval-cards.html">
+                        <i class="nav-icon fas fa-credit-card"></i>
+                        Discount Cards
+                    </a>
+                </li>
+                
+                <!-- UI Components -->
+                <li class="nav-item">
+                    <a class="nav-link" href="forms.html">
+                        <i class="nav-icon fas fa-edit"></i>
+                        Forms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="nav-icon fas fa-table"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widgets.html">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        Widgets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">
+                        <i class="nav-icon fas fa-mouse-pointer"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="nav-icon fas fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabs.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        Tabs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accordion.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Accordion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <i class="nav-icon fas fa-id-card"></i>
+                        Cards
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alerts.html">
+                        <i class="nav-icon fas fa-exclamation-circle"></i>
+                        Alerts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progress.html">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        Progress
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modals.html">
+                        <i class="nav-icon fas fa-window-maximize"></i>
+                        Modals
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tooltips.html">
+                        <i class="nav-icon fas fa-comment"></i>
+                        Tooltips
+                    </a>
+                </li>
+                
+                <!-- Communication -->
+                <li class="nav-item">
+                    <a class="nav-link" href="inbox.html">
+                        <i class="nav-icon fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="nav-icon fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                
+                <!-- Project Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="nav-icon fas fa-columns"></i>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="nav-icon fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+                
+                <!-- System -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="settings.html" class="nav-link active">
+                        <i class="nav-icon fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logs.html">
+                        <i class="nav-icon fas fa-history"></i>
+                        Audit Logs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file-manager.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        File Manager
+                    </a>
+                </li>
+                
+                <!-- Onboarding & Support -->
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">
+                        <i class="nav-icon fas fa-person-walking-arrow-right"></i>
+                        Onboarding
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">
+                        <i class="nav-icon fas fa-circle-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                
+                <!-- Business Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="nav-icon fas fa-tags"></i>
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.html">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        Invoice
+                    </a>
+                </li>
+                
+                <!-- Utility Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blank.html">
+                        <i class="nav-icon fas fa-file"></i>
+                        Blank Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="access-denied.html">
+                        <i class="nav-icon fas fa-ban"></i>
+                        Access Denied
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="404.html">
+                        <i class="nav-icon fas fa-exclamation-triangle"></i>
+                        404 Error
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="500.html">
+                        <i class="nav-icon fas fa-times-circle"></i>
+                        500 Error
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main-content">
+        <header class="header">
+            <button class="btn btn-link d-md-none" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-left">
+                <div class="breadcrumb-container"></div>
+                <h1>Settings & Configuration</h1>
+                <p class="text-muted mb-0">Configure system preferences, integrations, and settings.</p>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div>
+                        <div class="fw-semibold">John Doe</div>
+                        <small class="text-muted">Administrator</small>
+                    </div>
+                    <div class="user-dropdown">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                        <a href="settings.html" class="dropdown-item">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" data-action="logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- Settings Tabs -->
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="settingsTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab">
+                                <i class="fas fa-cog me-2"></i>General
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="appearance-tab" data-bs-toggle="tab" data-bs-target="#appearance" type="button" role="tab">
+                                <i class="fas fa-palette me-2"></i>Appearance
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="notifications-tab" data-bs-toggle="tab" data-bs-target="#notifications" type="button" role="tab">
+                                <i class="fas fa-bell me-2"></i>Notifications
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="integrations-tab" data-bs-toggle="tab" data-bs-target="#integrations" type="button" role="tab">
+                                <i class="fas fa-plug me-2"></i>Integrations
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="security-tab" data-bs-toggle="tab" data-bs-target="#security" type="button" role="tab">
+                                <i class="fas fa-shield-alt me-2"></i>Security
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="backup-tab" data-bs-toggle="tab" data-bs-target="#backup" type="button" role="tab">
+                                <i class="fas fa-database me-2"></i>Backup
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content" id="settingsTabsContent">
+                        <!-- General Settings Tab -->
+                        <div class="tab-pane fade show active" id="general" role="tabpanel">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="form-section">
+                                            <h6 class="form-section-title">Company Information</h6>
+                                            <div class="form-row">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="companyName" placeholder="Company Name" value="AGPanel Inc" required>
+                                                    <label for="companyName">Company Name</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="companyTagline" placeholder="Tagline" value="Professional Admin Dashboard">
+                                                    <label for="companyTagline">Tagline</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-floating">
+                                                    <input type="email" class="form-control" id="companyEmail" placeholder="Email" value="info@AGPanel.com" required>
+                                                    <label for="companyEmail">Company Email</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <input type="tel" class="form-control" id="companyPhone" placeholder="Phone" value="+1 (555) 123-4567">
+                                                    <label for="companyPhone">Phone Number</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <textarea class="form-control" id="companyAddress" placeholder="Address" style="height: 100px">123 Business Street, Suite 100, San Francisco, CA 94105</textarea>
+                                                <label for="companyAddress">Company Address</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-section">
+                                            <h6 class="form-section-title">System Configuration</h6>
+                                            <div class="form-row">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="timezone" required>
+                                                        <option value="UTC">UTC</option>
+                                                        <option value="America/New_York" selected>Eastern Time (ET)</option>
+                                                        <option value="America/Chicago">Central Time (CT)</option>
+                                                        <option value="America/Denver">Mountain Time (MT)</option>
+                                                        <option value="America/Los_Angeles">Pacific Time (PT)</option>
+                                                    </select>
+                                                    <label for="timezone">Timezone</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="dateFormat" required>
+                                                        <option value="MM/DD/YYYY" selected>MM/DD/YYYY</option>
+                                                        <option value="DD/MM/YYYY">DD/MM/YYYY</option>
+                                                        <option value="YYYY-MM-DD">YYYY-MM-DD</option>
+                                                    </select>
+                                                    <label for="dateFormat">Date Format</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="currency" required>
+                                                        <option value="USD" selected>USD - US Dollar</option>
+                                                        <option value="EUR">EUR - Euro</option>
+                                                        <option value="GBP">GBP - British Pound</option>
+                                                        <option value="JPY">JPY - Japanese Yen</option>
+                                                    </select>
+                                                    <label for="currency">Currency</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="language" required>
+                                                        <option value="en" selected>English</option>
+                                                        <option value="es">Spanish</option>
+                                                        <option value="fr">French</option>
+                                                        <option value="de">German</option>
+                                                    </select>
+                                                    <label for="language">Language</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-section">
+                                            <h6 class="form-section-title">Business Settings</h6>
+                                            <div class="form-row">
+                                                <div class="form-floating">
+                                                    <input type="number" class="form-control" id="businessHoursStart" placeholder="Start Time" value="9" min="0" max="23" required>
+                                                    <label for="businessHoursStart">Business Hours Start</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <input type="number" class="form-control" id="businessHoursEnd" placeholder="End Time" value="17" min="0" max="23" required>
+                                                    <label for="businessHoursEnd">Business Hours End</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-floating">
+                                                    <input type="number" class="form-control" id="taxRate" placeholder="Tax Rate" value="8.5" step="0.1" min="0" max="100">
+                                                    <label for="taxRate">Tax Rate (%)</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <input type="number" class="form-control" id="discountLimit" placeholder="Discount Limit" value="20" step="0.1" min="0" max="100">
+                                                    <label for="discountLimit">Max Discount (%)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn btn-primary" onclick="saveGeneralSettings()">
+                                                <i class="fas fa-save me-2"></i>Save Settings
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">System Information</h6>
+                                            <div class="mb-3">
+                                                <small class="text-muted">Version</small>
+                                                <div class="fw-semibold">1.0.0</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <small class="text-muted">Last Updated</small>
+                                                <div class="fw-semibold">January 15, 2024</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <small class="text-muted">Database</small>
+                                                <div class="fw-semibold">MySQL 8.0</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <small class="text-muted">Server</small>
+                                                <div class="fw-semibold">Apache 2.4</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <small class="text-muted">PHP Version</small>
+                                                <div class="fw-semibold">8.1.0</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Appearance Settings Tab -->
+                        <div class="tab-pane fade" id="appearance" role="tabpanel">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="form-section">
+                                            <h6 class="form-section-title">Theme Settings</h6>
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <div class="mb-3">
+                                                                <div class="theme-preview" style="width: 100%; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px;"></div>
+                                                            </div>
+                                                            <h6>Default Theme</h6>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="theme" id="themeDefault" value="default" checked>
+                                                                <label class="form-check-label" for="themeDefault">
+                                                                    Use Default
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="card">
+                                                        <div class="card-body text-center">
+                                                            <div class="mb-3">
+                                                                <div class="theme-preview" style="width: 100%; height: 80px; background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); border-radius: 8px;"></div>
+                                                            </div>
+                                                            <h6>Dark Theme</h6>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="theme" id="themeDark" value="dark">
+                                                                <label class="form-check-label" for="themeDark">
+                                                                    Use Dark
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-section">
+                                            <h6 class="form-section-title">Color Customization</h6>
+                                            <div class="form-row">
+                                                <div class="form-floating">
+                                                    <input type="color" class="form-control" id="primaryColor" value="#667eea">
+                                                    <label for="primaryColor">Primary Color</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <input type="color" class="form-control" id="secondaryColor" value="#f093fb">
+                                                    <label for="secondaryColor">Secondary Color</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-floating">
+                                                    <input type="color" class="form-control" id="successColor" value="#4facfe">
+                                                    <label for="successColor">Success Color</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <input type="color" class="form-control" id="warningColor" value="#43e97b">
+                                                    <label for="warningColor">Warning Color</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-section">
+                                            <h6 class="form-section-title">Layout Settings</h6>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="sidebarCollapsed" checked>
+                                                <label class="form-check-label" for="sidebarCollapsed">
+                                                    Collapsed Sidebar by Default
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="breadcrumbsEnabled" checked>
+                                                <label class="form-check-label" for="breadcrumbsEnabled">
+                                                    Show Breadcrumbs
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="animationsEnabled" checked>
+                                                <label class="form-check-label" for="animationsEnabled">
+                                                    Enable Animations
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn btn-primary" onclick="saveAppearanceSettings()">
+                                                <i class="fas fa-save me-2"></i>Save Settings
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Preview</h6>
+                                            <div class="theme-preview-large" style="width: 100%; height: 200px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; position: relative; overflow: hidden;">
+                                                <div style="position: absolute; top: 10px; left: 10px; right: 10px; height: 20px; background: rgba(255,255,255,0.2); border-radius: 4px;"></div>
+                                                <div style="position: absolute; top: 40px; left: 10px; width: 60px; height: 100px; background: rgba(255,255,255,0.1); border-radius: 4px;"></div>
+                                                <div style="position: absolute; top: 40px; left: 80px; right: 10px; height: 60px; background: rgba(255,255,255,0.1); border-radius: 4px;"></div>
+                                                <div style="position: absolute; top: 110px; left: 80px; right: 10px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 4px;"></div>
+                                            </div>
+                                            <p class="text-muted mt-3 mb-0">Live preview of your theme settings</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Notifications Settings Tab -->
+                        <div class="tab-pane fade" id="notifications" role="tabpanel">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-section">
+                                    <h6 class="form-section-title">Email Notifications</h6>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="emailNotifications" checked>
+                                        <label class="form-check-label" for="emailNotifications">
+                                            Enable Email Notifications
+                                        </label>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="notificationEmail" placeholder="Email" value="admin@AGPanel.com" required>
+                                            <label for="notificationEmail">Notification Email</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="smtpServer" placeholder="SMTP Server" value="smtp.gmail.com">
+                                            <label for="smtpServer">SMTP Server</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control" id="smtpPort" placeholder="Port" value="587">
+                                            <label for="smtpPort">SMTP Port</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="smtpUsername" placeholder="Username" value="admin@AGPanel.com">
+                                            <label for="smtpUsername">SMTP Username</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-section">
+                                    <h6 class="form-section-title">Notification Types</h6>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">System Notifications</h6>
+                                                    <div class="form-check form-switch mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="systemAlerts" checked>
+                                                        <label class="form-check-label" for="systemAlerts">
+                                                            System Alerts
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-switch mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="securityAlerts" checked>
+                                                        <label class="form-check-label" for="securityAlerts">
+                                                            Security Alerts
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-switch mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="maintenanceAlerts">
+                                                        <label class="form-check-label" for="maintenanceAlerts">
+                                                            Maintenance Alerts
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Business Notifications</h6>
+                                                    <div class="form-check form-switch mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="salesAlerts" checked>
+                                                        <label class="form-check-label" for="salesAlerts">
+                                                            Sales Alerts
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-switch mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="inventoryAlerts" checked>
+                                                        <label class="form-check-label" for="inventoryAlerts">
+                                                            Inventory Alerts
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-switch mb-2">
+                                                        <input class="form-check-input" type="checkbox" id="customerAlerts">
+                                                        <label class="form-check-label" for="customerAlerts">
+                                                            Customer Alerts
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-end">
+                                    <button type="button" class="btn btn-primary" onclick="saveNotificationSettings()">
+                                        <i class="fas fa-save me-2"></i>Save Settings
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Integrations Settings Tab -->
+                        <div class="tab-pane fade" id="integrations" role="tabpanel">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h6 class="card-title mb-0">Payment Gateway</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="paymentGateway" checked>
+                                                </div>
+                                            </div>
+                                            <p class="text-muted mb-3">Integrate with payment processors</p>
+                                            <div class="form-floating mb-3">
+                                                <select class="form-select" id="paymentProvider">
+                                                    <option value="stripe" selected>Stripe</option>
+                                                    <option value="paypal">PayPal</option>
+                                                    <option value="square">Square</option>
+                                                </select>
+                                                <label for="paymentProvider">Payment Provider</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="paymentApiKey" placeholder="API Key" value="pk_test_...">
+                                                <label for="paymentApiKey">API Key</label>
+                                            </div>
+                                            <button class="btn btn-outline-primary btn-sm" onclick="testPaymentConnection()">
+                                                <i class="fas fa-plug me-1"></i>Test Connection
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h6 class="card-title mb-0">Email Service</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="emailService" checked>
+                                                </div>
+                                            </div>
+                                            <p class="text-muted mb-3">Configure email delivery service</p>
+                                            <div class="form-floating mb-3">
+                                                <select class="form-select" id="emailProvider">
+                                                    <option value="smtp" selected>SMTP</option>
+                                                    <option value="sendgrid">SendGrid</option>
+                                                    <option value="mailgun">Mailgun</option>
+                                                </select>
+                                                <label for="emailProvider">Email Provider</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="emailApiKey" placeholder="API Key" value="SG...">
+                                                <label for="emailApiKey">API Key</label>
+                                            </div>
+                                            <button class="btn btn-outline-primary btn-sm" onclick="testEmailConnection()">
+                                                <i class="fas fa-plug me-1"></i>Test Connection
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h6 class="card-title mb-0">Analytics</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="analyticsService">
+                                                </div>
+                                            </div>
+                                            <p class="text-muted mb-3">Track user behavior and performance</p>
+                                            <div class="form-floating mb-3">
+                                                <select class="form-select" id="analyticsProvider">
+                                                    <option value="google">Google Analytics</option>
+                                                    <option value="mixpanel">Mixpanel</option>
+                                                    <option value="hotjar">Hotjar</option>
+                                                </select>
+                                                <label for="analyticsProvider">Analytics Provider</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="analyticsId" placeholder="Tracking ID" value="GA-...">
+                                                <label for="analyticsId">Tracking ID</label>
+                                            </div>
+                                            <button class="btn btn-outline-primary btn-sm" onclick="testAnalyticsConnection()">
+                                                <i class="fas fa-plug me-1"></i>Test Connection
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                                <h6 class="card-title mb-0">Storage</h6>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="storageService" checked>
+                                                </div>
+                                            </div>
+                                            <p class="text-muted mb-3">Cloud storage for files and backups</p>
+                                            <div class="form-floating mb-3">
+                                                <select class="form-select" id="storageProvider">
+                                                    <option value="aws" selected>AWS S3</option>
+                                                    <option value="google">Google Cloud</option>
+                                                    <option value="azure">Azure Blob</option>
+                                                </select>
+                                                <label for="storageProvider">Storage Provider</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="storageBucket" placeholder="Bucket Name" value="AGPanel-storage">
+                                                <label for="storageBucket">Bucket Name</label>
+                                            </div>
+                                            <button class="btn btn-outline-primary btn-sm" onclick="testStorageConnection()">
+                                                <i class="fas fa-plug me-1"></i>Test Connection
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Security Settings Tab -->
+                        <div class="tab-pane fade" id="security" role="tabpanel">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-section">
+                                    <h6 class="form-section-title">Password Policy</h6>
+                                    <div class="form-row">
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control" id="minPasswordLength" placeholder="Minimum Length" value="8" min="6" max="20" required>
+                                            <label for="minPasswordLength">Minimum Password Length</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control" id="passwordExpiry" placeholder="Expiry Days" value="90" min="30" max="365">
+                                            <label for="passwordExpiry">Password Expiry (Days)</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="requireUppercase" checked>
+                                        <label class="form-check-label" for="requireUppercase">
+                                            Require Uppercase Letters
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="requireNumbers" checked>
+                                        <label class="form-check-label" for="requireNumbers">
+                                            Require Numbers
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="requireSymbols">
+                                        <label class="form-check-label" for="requireSymbols">
+                                            Require Special Characters
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-section">
+                                    <h6 class="form-section-title">Session Security</h6>
+                                    <div class="form-row">
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control" id="sessionTimeout" placeholder="Timeout Minutes" value="30" min="5" max="480" required>
+                                            <label for="sessionTimeout">Session Timeout (Minutes)</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control" id="maxLoginAttempts" placeholder="Max Attempts" value="5" min="3" max="10" required>
+                                            <label for="maxLoginAttempts">Max Login Attempts</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="twoFactorAuth">
+                                        <label class="form-check-label" for="twoFactorAuth">
+                                            Enable Two-Factor Authentication
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="ipWhitelist">
+                                        <label class="form-check-label" for="ipWhitelist">
+                                            Enable IP Whitelist
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-section">
+                                    <h6 class="form-section-title">Data Protection</h6>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="dataEncryption" checked>
+                                        <label class="form-check-label" for="dataEncryption">
+                                            Enable Data Encryption
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="auditLogging" checked>
+                                        <label class="form-check-label" for="auditLogging">
+                                            Enable Audit Logging
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch mb-3">
+                                        <input class="form-check-input" type="checkbox" id="gdprCompliance">
+                                        <label class="form-check-label" for="gdprCompliance">
+                                            GDPR Compliance Mode
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-flex justify-content-end">
+                                    <button type="button" class="btn btn-primary" onclick="saveSecuritySettings()">
+                                        <i class="fas fa-save me-2"></i>Save Settings
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Backup Settings Tab -->
+                        <div class="tab-pane fade" id="backup" role="tabpanel">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="form-section">
+                                            <h6 class="form-section-title">Backup Configuration</h6>
+                                            <div class="form-row">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="backupFrequency" required>
+                                                        <option value="daily" selected>Daily</option>
+                                                        <option value="weekly">Weekly</option>
+                                                        <option value="monthly">Monthly</option>
+                                                    </select>
+                                                    <label for="backupFrequency">Backup Frequency</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <input type="time" class="form-control" id="backupTime" value="02:00" required>
+                                                    <label for="backupTime">Backup Time</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-floating">
+                                                    <input type="number" class="form-control" id="backupRetention" placeholder="Retention Days" value="30" min="7" max="365" required>
+                                                    <label for="backupRetention">Retention Period (Days)</label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="backupStorage" required>
+                                                        <option value="local" selected>Local Storage</option>
+                                                        <option value="aws">AWS S3</option>
+                                                        <option value="google">Google Cloud</option>
+                                                    </select>
+                                                    <label for="backupStorage">Storage Location</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-section">
+                                            <h6 class="form-section-title">Backup Options</h6>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="backupDatabase" checked>
+                                                <label class="form-check-label" for="backupDatabase">
+                                                    Include Database
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="backupFiles" checked>
+                                                <label class="form-check-label" for="backupFiles">
+                                                    Include Files
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="backupCompression" checked>
+                                                <label class="form-check-label" for="backupCompression">
+                                                    Compress Backups
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-switch mb-3">
+                                                <input class="form-check-input" type="checkbox" id="backupEncryption">
+                                                <label class="form-check-label" for="backupEncryption">
+                                                    Encrypt Backups
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn btn-primary" onclick="saveBackupSettings()">
+                                                <i class="fas fa-save me-2"></i>Save Settings
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Backup Status</h6>
+                                            <div class="mb-3">
+                                                <small class="text-muted">Last Backup</small>
+                                                <div class="fw-semibold">January 15, 2024 2:00 AM</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <small class="text-muted">Next Backup</small>
+                                                <div class="fw-semibold">January 16, 2024 2:00 AM</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <small class="text-muted">Backup Size</small>
+                                                <div class="fw-semibold">245 MB</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <small class="text-muted">Status</small>
+                                                <div class="fw-semibold text-success">Active</div>
+                                            </div>
+                                            <div class="d-grid gap-2">
+                                                <button class="btn btn-outline-primary btn-sm" onclick="createBackup()">
+                                                    <i class="fas fa-download me-1"></i>Create Backup Now
+                                                </button>
+                                                <button class="btn btn-outline-success btn-sm" onclick="restoreBackup()">
+                                                    <i class="fas fa-upload me-1"></i>Restore Backup
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function saveGeneralSettings() {
+            const hideLoading = showLoading(event.target);
+            
+            setTimeout(() => {
+                hideLoading();
+                showAlert('General settings saved successfully!', 'success');
+            }, 1000);
+        }
+        
+        function saveAppearanceSettings() {
+            const hideLoading = showLoading(event.target);
+            
+            setTimeout(() => {
+                hideLoading();
+                showAlert('Appearance settings saved successfully!', 'success');
+            }, 1000);
+        }
+        
+        function saveNotificationSettings() {
+            const hideLoading = showLoading(event.target);
+            
+            setTimeout(() => {
+                hideLoading();
+                showAlert('Notification settings saved successfully!', 'success');
+            }, 1000);
+        }
+        
+        function saveSecuritySettings() {
+            const hideLoading = showLoading(event.target);
+            
+            setTimeout(() => {
+                hideLoading();
+                showAlert('Security settings saved successfully!', 'success');
+            }, 1000);
+        }
+        
+        function saveBackupSettings() {
+            const hideLoading = showLoading(event.target);
+            
+            setTimeout(() => {
+                hideLoading();
+                showAlert('Backup settings saved successfully!', 'success');
+            }, 1000);
+        }
+        
+        function testPaymentConnection() {
+            showAlert('Testing payment connection...', 'info');
+        }
+        
+        function testEmailConnection() {
+            showAlert('Testing email connection...', 'info');
+        }
+        
+        function testAnalyticsConnection() {
+            showAlert('Testing analytics connection...', 'info');
+        }
+        
+        function testStorageConnection() {
+            showAlert('Testing storage connection...', 'info');
+        }
+        
+        function createBackup() {
+            if (confirm('Are you sure you want to create a backup now?')) {
+                const hideLoading = showLoading(event.target);
+                
+                setTimeout(() => {
+                    hideLoading();
+                    showAlert('Backup created successfully!', 'success');
+                }, 2000);
+            }
+        }
+        
+        function restoreBackup() {
+            showAlert('Opening backup restore dialog...', 'info');
+        }
+    </script>
+</body>
+</html>

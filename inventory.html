@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-brand"><i class="fas fa-chart-line me-2"></i>AGPanel</a>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav flex-column">
+                <!-- Main Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                
+                <!-- User Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">
+                        <i class="nav-icon fas fa-users"></i>
+                        User Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        Role & Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="nav-icon fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                
+                <!-- Business Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="master-data.html">
+                        <i class="nav-icon fas fa-database"></i>
+                        Master Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales.html">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        Sales & Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-details.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Sales Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-territory-details.html">
+                        <i class="nav-icon fas fa-map-marked-alt"></i>
+                        Territory Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="inventory.html" class="nav-link active">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        Inventory Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Reports & Analytics
+                    </a>
+                </li>
+                
+                <!-- Discount Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval.html">
+                        <i class="nav-icon fas fa-percentage"></i>
+                        Discount Approval
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval-cards.html">
+                        <i class="nav-icon fas fa-credit-card"></i>
+                        Discount Cards
+                    </a>
+                </li>
+                
+                <!-- UI Components -->
+                <li class="nav-item">
+                    <a class="nav-link" href="forms.html">
+                        <i class="nav-icon fas fa-edit"></i>
+                        Forms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="nav-icon fas fa-table"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widgets.html">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        Widgets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">
+                        <i class="nav-icon fas fa-mouse-pointer"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="nav-icon fas fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabs.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        Tabs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accordion.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Accordion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <i class="nav-icon fas fa-id-card"></i>
+                        Cards
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alerts.html">
+                        <i class="nav-icon fas fa-exclamation-circle"></i>
+                        Alerts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progress.html">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        Progress
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modals.html">
+                        <i class="nav-icon fas fa-window-maximize"></i>
+                        Modals
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tooltips.html">
+                        <i class="nav-icon fas fa-comment"></i>
+                        Tooltips
+                    </a>
+                </li>
+                
+                <!-- Communication -->
+                <li class="nav-item">
+                    <a class="nav-link" href="inbox.html">
+                        <i class="nav-icon fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="nav-icon fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                
+                <!-- Project Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="nav-icon fas fa-columns"></i>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="nav-icon fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+                
+                <!-- System -->
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <i class="nav-icon fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logs.html">
+                        <i class="nav-icon fas fa-history"></i>
+                        Audit Logs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file-manager.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        File Manager
+                    </a>
+                </li>
+                
+                <!-- Onboarding & Support -->
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">
+                        <i class="nav-icon fas fa-person-walking-arrow-right"></i>
+                        Onboarding
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">
+                        <i class="nav-icon fas fa-circle-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                
+                <!-- Business Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="nav-icon fas fa-tags"></i>
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.html">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        Invoice
+                    </a>
+                </li>
+                
+                <!-- Utility Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blank.html">
+                        <i class="nav-icon fas fa-file"></i>
+                        Blank Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="access-denied.html">
+                        <i class="nav-icon fas fa-ban"></i>
+                        Access Denied
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="404.html">
+                        <i class="nav-icon fas fa-exclamation-triangle"></i>
+                        404 Error
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="500.html">
+                        <i class="nav-icon fas fa-times-circle"></i>
+                        500 Error
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main-content">
+        <header class="header">
+            <button class="btn btn-link d-md-none" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-left">
+                <div class="breadcrumb-container"></div>
+                <h1>Inventory Management</h1>
+                <p class="text-muted mb-0">Track stock levels, manage inventory, and monitor product availability.</p>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div>
+                        <div class="fw-semibold">John Doe</div>
+                        <small class="text-muted">Administrator</small>
+                    </div>
+                    <div class="user-dropdown">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                        <a href="settings.html" class="dropdown-item">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" data-action="logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <div class="stat-value">1,247</div>
+                    <div class="stat-label">Total Products</div>
+                </div>
+                <div class="stat-card success">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-value">1,156</div>
+                    <div class="stat-label">In Stock</div>
+                </div>
+                <div class="stat-card warning">
+                    <div class="stat-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="stat-value">23</div>
+                    <div class="stat-label">Low Stock</div>
+                </div>
+                <div class="stat-card danger">
+                    <div class="stat-icon">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <div class="stat-value">68</div>
+                    <div class="stat-label">Out of Stock</div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Quick Actions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#addProductModal">
+                                <i class="fas fa-plus me-2"></i>Add Product
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#stockInModal">
+                                <i class="fas fa-arrow-down me-2"></i>Stock In
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#stockOutModal">
+                                <i class="fas fa-arrow-up me-2"></i>Stock Out
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-info w-100" onclick="exportInventory()">
+                                <i class="fas fa-file-excel me-2"></i>Export Inventory
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inventory Tabs -->
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="inventoryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="products-tab" data-bs-toggle="tab" data-bs-target="#products" type="button" role="tab">
+                                <i class="fas fa-box me-2"></i>Products
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="movements-tab" data-bs-toggle="tab" data-bs-target="#movements" type="button" role="tab">
+                                <i class="fas fa-exchange-alt me-2"></i>Stock Movements
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="alerts-tab" data-bs-toggle="tab" data-bs-target="#alerts" type="button" role="tab">
+                                <i class="fas fa-bell me-2"></i>Stock Alerts
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="reports-tab" data-bs-toggle="tab" data-bs-target="#reports" type="button" role="tab">
+                                <i class="fas fa-chart-bar me-2"></i>Inventory Reports
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content" id="inventoryTabsContent">
+                        <!-- Products Tab -->
+                        <div class="tab-pane fade show active" id="products" role="tabpanel">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0">Product Inventory</h5>
+                                <div class="card-header-actions">
+                                    <div class="btn-group btn-group-sm">
+                                        <button class="btn btn-outline-secondary active" onclick="toggleView('table')">
+                                            <i class="fas fa-table"></i>
+                                        </button>
+                                        <button class="btn btn-outline-secondary" onclick="toggleView('grid')">
+                                            <i class="fas fa-th-large"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Table Filters -->
+                            <div class="table-filters">
+                                <div class="filter-group">
+                                    <div class="filter-item">
+                                        <label class="form-label">Search</label>
+                                        <div class="search-box">
+                                            <i class="fas fa-search search-icon"></i>
+                                            <input type="text" class="form-control" placeholder="Search products...">
+                                        </div>
+                                    </div>
+                                    <div class="filter-item">
+                                        <label class="form-label">Category</label>
+                                        <select class="form-select" data-column="2">
+                                            <option value="">All Categories</option>
+                                            <option value="Diamond">Diamond</option>
+                                            <option value="Gold">Gold</option>
+                                            <option value="Silver">Silver</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <label class="form-label">Status</label>
+                                        <select class="form-select" data-column="5">
+                                            <option value="">All Status</option>
+                                            <option value="In Stock">In Stock</option>
+                                            <option value="Low Stock">Low Stock</option>
+                                            <option value="Out of Stock">Out of Stock</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-item">
+                                        <label class="form-label">&nbsp;</label>
+                                        <div class="export-buttons">
+                                            <button class="btn btn-outline-success export-btn" data-format="csv">
+                                                <i class="fas fa-file-csv"></i> CSV
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Table View -->
+                            <div id="tableView" class="table-responsive">
+                                <table class="table table-advanced">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>SKU</th>
+                                            <th>Category</th>
+                                            <th>Current Stock</th>
+                                            <th>Min Stock</th>
+                                            <th>Status</th>
+                                            <th>Last Updated</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="me-3">
+                                                        <div class="product-image" style="width: 40px; height: 40px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                            <i class="fas fa-gem text-warning"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="fw-semibold">Diamond Ring - Classic</div>
+                                                        <small class="text-muted">Premium Collection</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>DR001</td>
+                                            <td><span class="badge bg-warning">Diamond</span></td>
+                                            <td>
+                                                <div class="fw-semibold">15</div>
+                                                <small class="text-muted">units</small>
+                                            </td>
+                                            <td>5</td>
+                                            <td><span class="badge bg-success">In Stock</span></td>
+                                            <td>2 hours ago</td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" data-bs-toggle="modal" data-bs-target="#editProductModal">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-info btn-action" onclick="viewProductHistory('DR001')">
+                                                        <i class="fas fa-history"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-warning btn-action" onclick="adjustStock('DR001')">
+                                                        <i class="fas fa-sliders-h"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="me-3">
+                                                        <div class="product-image" style="width: 40px; height: 40px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                            <i class="fas fa-coins text-warning"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="fw-semibold">Gold Necklace - Premium</div>
+                                                        <small class="text-muted">Luxury Collection</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>GN001</td>
+                                            <td><span class="badge bg-warning">Gold</span></td>
+                                            <td>
+                                                <div class="fw-semibold">3</div>
+                                                <small class="text-muted">units</small>
+                                            </td>
+                                            <td>5</td>
+                                            <td><span class="badge bg-warning">Low Stock</span></td>
+                                            <td>1 day ago</td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" data-bs-toggle="modal" data-bs-target="#editProductModal">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-info btn-action" onclick="viewProductHistory('GN001')">
+                                                        <i class="fas fa-history"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-success btn-action" onclick="reorderProduct('GN001')">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="me-3">
+                                                        <div class="product-image" style="width: 40px; height: 40px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                            <i class="fas fa-coins text-secondary"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="fw-semibold">Silver Bracelet - Elegant</div>
+                                                        <small class="text-muted">Classic Collection</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>SB001</td>
+                                            <td><span class="badge bg-secondary">Silver</span></td>
+                                            <td>
+                                                <div class="fw-semibold">0</div>
+                                                <small class="text-muted">units</small>
+                                            </td>
+                                            <td>3</td>
+                                            <td><span class="badge bg-danger">Out of Stock</span></td>
+                                            <td>3 days ago</td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" data-bs-toggle="modal" data-bs-target="#editProductModal">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-info btn-action" onclick="viewProductHistory('SB001')">
+                                                        <i class="fas fa-history"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-success btn-action" onclick="reorderProduct('SB001')">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Grid View -->
+                            <div id="gridView" class="d-none">
+                                <div class="row g-3">
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                                    <div class="product-image" style="width: 50px; height: 50px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                        <i class="fas fa-gem text-warning"></i>
+                                                    </div>
+                                                    <span class="badge bg-success">In Stock</span>
+                                                </div>
+                                                <h6 class="card-title">Diamond Ring - Classic</h6>
+                                                <p class="text-muted mb-2">SKU: DR001</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="fw-semibold">15 units</span>
+                                                    <small class="text-muted">Min: 5</small>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <button class="btn btn-outline-primary btn-sm me-2">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-info btn-sm me-2">
+                                                        <i class="fas fa-history"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-warning btn-sm">
+                                                        <i class="fas fa-sliders-h"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                                    <div class="product-image" style="width: 50px; height: 50px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                        <i class="fas fa-coins text-warning"></i>
+                                                    </div>
+                                                    <span class="badge bg-warning">Low Stock</span>
+                                                </div>
+                                                <h6 class="card-title">Gold Necklace - Premium</h6>
+                                                <p class="text-muted mb-2">SKU: GN001</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="fw-semibold">3 units</span>
+                                                    <small class="text-muted">Min: 5</small>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <button class="btn btn-outline-primary btn-sm me-2">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-info btn-sm me-2">
+                                                        <i class="fas fa-history"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-success btn-sm">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between align-items-start mb-2">
+                                                    <div class="product-image" style="width: 50px; height: 50px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                                        <i class="fas fa-coins text-secondary"></i>
+                                                    </div>
+                                                    <span class="badge bg-danger">Out of Stock</span>
+                                                </div>
+                                                <h6 class="card-title">Silver Bracelet - Elegant</h6>
+                                                <p class="text-muted mb-2">SKU: SB001</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <span class="fw-semibold">0 units</span>
+                                                    <small class="text-muted">Min: 3</small>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <button class="btn btn-outline-primary btn-sm me-2">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-info btn-sm me-2">
+                                                        <i class="fas fa-history"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-success btn-sm">
+                                                        <i class="fas fa-shopping-cart"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stock Movements Tab -->
+                        <div class="tab-pane fade" id="movements" role="tabpanel">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0">Stock Movements</h5>
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovementModal">
+                                    <i class="fas fa-plus me-2"></i>Add Movement
+                                </button>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-advanced">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Product</th>
+                                            <th>Type</th>
+                                            <th>Quantity</th>
+                                            <th>Reason</th>
+                                            <th>User</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2024-01-15</td>
+                                            <td>Diamond Ring - Classic</td>
+                                            <td><span class="badge bg-success">Stock In</span></td>
+                                            <td>+5</td>
+                                            <td>Purchase Order</td>
+                                            <td>John Doe</td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewMovementDetails(1)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024-01-14</td>
+                                            <td>Gold Necklace - Premium</td>
+                                            <td><span class="badge bg-danger">Stock Out</span></td>
+                                            <td>-2</td>
+                                            <td>Sale</td>
+                                            <td>Sarah Miller</td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewMovementDetails(2)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Stock Alerts Tab -->
+                        <div class="tab-pane fade" id="alerts" role="tabpanel">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0">Stock Alerts</h5>
+                                <div class="card-header-actions">
+                                    <button class="btn btn-outline-primary btn-sm" onclick="configureAlerts()">
+                                        <i class="fas fa-cog me-2"></i>Configure Alerts
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="card border-warning">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="me-3">
+                                                    <i class="fas fa-exclamation-triangle text-warning" style="font-size: 2rem;"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="card-title mb-1">Low Stock Alert</h6>
+                                                    <p class="text-muted mb-1">Gold Necklace - Premium</p>
+                                                    <small class="text-warning">Current: 3 units | Minimum: 5 units</small>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3">
+                                                <button class="btn btn-warning btn-sm me-2" onclick="reorderProduct('GN001')">
+                                                    <i class="fas fa-shopping-cart me-1"></i>Reorder
+                                                </button>
+                                                <button class="btn btn-outline-secondary btn-sm" onclick="dismissAlert(1)">
+                                                    <i class="fas fa-times me-1"></i>Dismiss
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-danger">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="me-3">
+                                                    <i class="fas fa-times-circle text-danger" style="font-size: 2rem;"></i>
+                                                </div>
+                                                <div>
+                                                    <h6 class="card-title mb-1">Out of Stock Alert</h6>
+                                                    <p class="text-muted mb-1">Silver Bracelet - Elegant</p>
+                                                    <small class="text-danger">Current: 0 units | Minimum: 3 units</small>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3">
+                                                <button class="btn btn-danger btn-sm me-2" onclick="reorderProduct('SB001')">
+                                                    <i class="fas fa-shopping-cart me-1"></i>Reorder
+                                                </button>
+                                                <button class="btn btn-outline-secondary btn-sm" onclick="dismissAlert(2)">
+                                                    <i class="fas fa-times me-1"></i>Dismiss
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Inventory Reports Tab -->
+                        <div class="tab-pane fade" id="reports" role="tabpanel">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0">Inventory Reports</h5>
+                                <div class="card-header-actions">
+                                    <button class="btn btn-success btn-sm" onclick="generateReport()">
+                                        <i class="fas fa-file-excel me-2"></i>Generate Report
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Stock Summary</h6>
+                                            <div class="card-stats">
+                                                <div class="card-stat">
+                                                    <div class="card-stat-value">1,156</div>
+                                                    <div class="card-stat-label">In Stock</div>
+                                                </div>
+                                                <div class="card-stat">
+                                                    <div class="card-stat-value">23</div>
+                                                    <div class="card-stat-label">Low Stock</div>
+                                                </div>
+                                                <div class="card-stat">
+                                                    <div class="card-stat-value">68</div>
+                                                    <div class="card-stat-label">Out of Stock</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Category Breakdown</h6>
+                                            <div class="card-stats">
+                                                <div class="card-stat">
+                                                    <div class="card-stat-value">456</div>
+                                                    <div class="card-stat-label">Diamond</div>
+                                                </div>
+                                                <div class="card-stat">
+                                                    <div class="card-stat-value">523</div>
+                                                    <div class="card-stat-label">Gold</div>
+                                                </div>
+                                                <div class="card-stat">
+                                                    <div class="card-stat-value">268</div>
+                                                    <div class="card-stat-label">Silver</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add Product Modal -->
+    <div class="modal fade" id="addProductModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-section">
+                            <h6 class="form-section-title">Product Information</h6>
+                            <div class="form-row">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="productName" placeholder="Product Name" required>
+                                    <label for="productName">Product Name</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="productSKU" placeholder="SKU" required>
+                                    <label for="productSKU">SKU</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-floating">
+                                    <select class="form-select" id="productCategory" required>
+                                        <option value="">Select Category</option>
+                                        <option value="Diamond">Diamond</option>
+                                        <option value="Gold">Gold</option>
+                                        <option value="Silver">Silver</option>
+                                    </select>
+                                    <label for="productCategory">Category</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="number" class="form-control" id="productPrice" placeholder="Price" step="0.01" required>
+                                    <label for="productPrice">Price</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h6 class="form-section-title">Inventory Settings</h6>
+                            <div class="form-row">
+                                <div class="form-floating">
+                                    <input type="number" class="form-control" id="initialStock" placeholder="Initial Stock" min="0" required>
+                                    <label for="initialStock">Initial Stock</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="number" class="form-control" id="minStock" placeholder="Minimum Stock" min="0" required>
+                                    <label for="minStock">Minimum Stock</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="addProduct()">Add Product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stock In Modal -->
+    <div class="modal fade" id="stockInModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Stock In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="stockInProduct" required>
+                                <option value="">Select Product</option>
+                                <option value="DR001">Diamond Ring - Classic</option>
+                                <option value="GN001">Gold Necklace - Premium</option>
+                                <option value="SB001">Silver Bracelet - Elegant</option>
+                            </select>
+                            <label for="stockInProduct">Product</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="stockInQuantity" placeholder="Quantity" min="1" required>
+                            <label for="stockInQuantity">Quantity</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="stockInReason" required>
+                                <option value="">Select Reason</option>
+                                <option value="Purchase Order">Purchase Order</option>
+                                <option value="Return">Return</option>
+                                <option value="Adjustment">Adjustment</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <label for="stockInReason">Reason</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="stockInNotes" placeholder="Notes" style="height: 100px"></textarea>
+                            <label for="stockInNotes">Notes</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success" onclick="processStockIn()">Process Stock In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stock Out Modal -->
+    <div class="modal fade" id="stockOutModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Stock Out</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="stockOutProduct" required>
+                                <option value="">Select Product</option>
+                                <option value="DR001">Diamond Ring - Classic</option>
+                                <option value="GN001">Gold Necklace - Premium</option>
+                                <option value="SB001">Silver Bracelet - Elegant</option>
+                            </select>
+                            <label for="stockOutProduct">Product</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="stockOutQuantity" placeholder="Quantity" min="1" required>
+                            <label for="stockOutQuantity">Quantity</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="stockOutReason" required>
+                                <option value="">Select Reason</option>
+                                <option value="Sale">Sale</option>
+                                <option value="Damage">Damage</option>
+                                <option value="Theft">Theft</option>
+                                <option value="Adjustment">Adjustment</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <label for="stockOutReason">Reason</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="stockOutNotes" placeholder="Notes" style="height: 100px"></textarea>
+                            <label for="stockOutNotes">Notes</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-warning" onclick="processStockOut()">Process Stock Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function toggleView(view) {
+            const tableView = document.getElementById('tableView');
+            const gridView = document.getElementById('gridView');
+            const buttons = document.querySelectorAll('.btn-group .btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            if (view === 'table') {
+                tableView.classList.remove('d-none');
+                gridView.classList.add('d-none');
+            } else {
+                tableView.classList.add('d-none');
+                gridView.classList.remove('d-none');
+            }
+        }
+        
+        function addProduct() {
+            const hideLoading = showLoading(event.target);
+            
+            setTimeout(() => {
+                hideLoading();
+                showAlert('Product added successfully!', 'success');
+                closeModal('addProductModal');
+            }, 1000);
+        }
+        
+        function processStockIn() {
+            const hideLoading = showLoading(event.target);
+            
+            setTimeout(() => {
+                hideLoading();
+                showAlert('Stock in processed successfully!', 'success');
+                closeModal('stockInModal');
+            }, 1000);
+        }
+        
+        function processStockOut() {
+            const hideLoading = showLoading(event.target);
+            
+            setTimeout(() => {
+                hideLoading();
+                showAlert('Stock out processed successfully!', 'success');
+                closeModal('stockOutModal');
+            }, 1000);
+        }
+        
+        function viewProductHistory(sku) {
+            showAlert(`Opening product history for ${sku}...`, 'info');
+        }
+        
+        function adjustStock(sku) {
+            showAlert(`Opening stock adjustment for ${sku}...`, 'info');
+        }
+        
+        function reorderProduct(sku) {
+            if (confirm('Are you sure you want to create a reorder for this product?')) {
+                const hideLoading = showLoading(event.target);
+                
+                setTimeout(() => {
+                    hideLoading();
+                    showAlert('Reorder created successfully!', 'success');
+                }, 1000);
+            }
+        }
+        
+        function viewMovementDetails(id) {
+            showAlert(`Opening movement details for ID ${id}...`, 'info');
+        }
+        
+        function dismissAlert(id) {
+            if (confirm('Are you sure you want to dismiss this alert?')) {
+                showAlert('Alert dismissed successfully!', 'info');
+            }
+        }
+        
+        function configureAlerts() {
+            showAlert('Opening alert configuration...', 'info');
+        }
+        
+        function generateReport() {
+            showAlert('Generating inventory report...', 'info');
+        }
+        
+        function exportInventory() {
+            showAlert('Exporting inventory data...', 'info');
+        }
+    </script>
+</body>
+</html>

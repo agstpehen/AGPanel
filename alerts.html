@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-brand"><i class="fas fa-chart-line me-2"></i>AGPanel</a>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav flex-column">
+                <!-- Main Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                
+                <!-- User Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">
+                        <i class="nav-icon fas fa-users"></i>
+                        User Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        Role & Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="nav-icon fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                
+                <!-- Business Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="master-data.html">
+                        <i class="nav-icon fas fa-database"></i>
+                        Master Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales.html">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        Sales & Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-details.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Sales Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-territory-details.html">
+                        <i class="nav-icon fas fa-map-marked-alt"></i>
+                        Territory Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        Inventory Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Reports & Analytics
+                    </a>
+                </li>
+                
+                <!-- Discount Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval.html">
+                        <i class="nav-icon fas fa-percentage"></i>
+                        Discount Approval
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval-cards.html">
+                        <i class="nav-icon fas fa-credit-card"></i>
+                        Discount Cards
+                    </a>
+                </li>
+                
+                <!-- UI Components -->
+                <li class="nav-item">
+                    <a class="nav-link" href="forms.html">
+                        <i class="nav-icon fas fa-edit"></i>
+                        Forms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="nav-icon fas fa-table"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widgets.html">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        Widgets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">
+                        <i class="nav-icon fas fa-mouse-pointer"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="nav-icon fas fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabs.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        Tabs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accordion.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Accordion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <i class="nav-icon fas fa-id-card"></i>
+                        Cards
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="alerts.html" class="nav-link active">
+                        <i class="nav-icon fas fa-exclamation-circle"></i>
+                        Alerts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progress.html">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        Progress
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modals.html">
+                        <i class="nav-icon fas fa-window-maximize"></i>
+                        Modals
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tooltips.html">
+                        <i class="nav-icon fas fa-comment"></i>
+                        Tooltips
+                    </a>
+                </li>
+                
+                <!-- Communication -->
+                <li class="nav-item">
+                    <a class="nav-link" href="inbox.html">
+                        <i class="nav-icon fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="nav-icon fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                
+                <!-- Project Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="nav-icon fas fa-columns"></i>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="nav-icon fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+                
+                <!-- System -->
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <i class="nav-icon fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logs.html">
+                        <i class="nav-icon fas fa-history"></i>
+                        Audit Logs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file-manager.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        File Manager
+                    </a>
+                </li>
+                
+                <!-- Onboarding & Support -->
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">
+                        <i class="nav-icon fas fa-person-walking-arrow-right"></i>
+                        Onboarding
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">
+                        <i class="nav-icon fas fa-circle-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                
+                <!-- Business Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="nav-icon fas fa-tags"></i>
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.html">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        Invoice
+                    </a>
+                </li>
+                
+                <!-- Utility Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blank.html">
+                        <i class="nav-icon fas fa-file"></i>
+                        Blank Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="access-denied.html">
+                        <i class="nav-icon fas fa-ban"></i>
+                        Access Denied
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="404.html">
+                        <i class="nav-icon fas fa-exclamation-triangle"></i>
+                        404 Error
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="500.html">
+                        <i class="nav-icon fas fa-times-circle"></i>
+                        500 Error
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main-content">
+        <header class="header">
+            <button class="btn btn-link d-md-none" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-left">
+                <div class="breadcrumb-container"></div>
+                <h1>Alerts</h1>
+                <p class="text-muted mb-0">Alert components with various styles, types, and interactive features.</p>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div>
+                        <div class="fw-semibold">John Doe</div>
+                        <small class="text-muted">Administrator</small>
+                    </div>
+                    <div class="user-dropdown">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                        <a href="settings.html" class="dropdown-item">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" data-action="logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- Basic Alerts -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Basic Alerts</h5>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-primary" role="alert">
+                        <i class="fas fa-info-circle me-2"></i>
+                        A simple primary alert—check it out!
+                    </div>
+                    <div class="alert alert-secondary" role="alert">
+                        <i class="fas fa-circle me-2"></i>
+                        A simple secondary alert—check it out!
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        <i class="fas fa-check-circle me-2"></i>
+                        A simple success alert—check it out!
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        A simple danger alert—check it out!
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        <i class="fas fa-exclamation-circle me-2"></i>
+                        A simple warning alert—check it out!
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        <i class="fas fa-info-circle me-2"></i>
+                        A simple info alert—check it out!
+                    </div>
+                    <div class="alert alert-light" role="alert">
+                        <i class="fas fa-lightbulb me-2"></i>
+                        A simple light alert—check it out!
+                    </div>
+                    <div class="alert alert-dark" role="alert">
+                        <i class="fas fa-moon me-2"></i>
+                        A simple dark alert—check it out!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alerts with Links -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Alerts with Links</h5>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-primary" role="alert">
+                        <i class="fas fa-info-circle me-2"></i>
+                        A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        <i class="fas fa-check-circle me-2"></i>
+                        A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dismissible Alerts -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Dismissible Alerts</h5>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <i class="fas fa-exclamation-circle me-2"></i>
+                        <strong>Warning!</strong> This alert can be dismissed by clicking the close button.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Info!</strong> This alert can be dismissed by clicking the close button.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <i class="fas fa-check-circle me-2"></i>
+                        <strong>Success!</strong> This alert can be dismissed by clicking the close button.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alerts with Additional Content -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Alerts with Additional Content</h5>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">
+                            <i class="fas fa-check-circle me-2"></i>
+                            Well done!
+                        </h4>
+                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                        <hr>
+                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        <h4 class="alert-heading">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            Error!
+                        </h4>
+                        <p>There was an error processing your request. Please check the following:</p>
+                        <ul class="mb-0">
+                            <li>Verify your email address</li>
+                            <li>Check your password</li>
+                            <li>Ensure your account is active</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Alerts -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Custom Alerts</h5>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-custom alert-primary" role="alert">
+                        <div class="alert-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="alert-content">
+                            <h6 class="alert-title">Premium Feature</h6>
+                            <p class="alert-text">This is a custom styled alert with an icon and structured content.</p>
+                        </div>
+                        <div class="alert-actions">
+                            <button class="btn btn-sm btn-outline-primary">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="alert alert-custom alert-success" role="alert">
+                        <div class="alert-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="alert-content">
+                            <h6 class="alert-title">Operation Successful</h6>
+                            <p class="alert-text">Your request has been processed successfully.</p>
+                        </div>
+                        <div class="alert-actions">
+                            <button class="btn btn-sm btn-outline-success">View Details</button>
+                        </div>
+                    </div>
+                    <div class="alert alert-custom alert-warning" role="alert">
+                        <div class="alert-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="alert-content">
+                            <h6 class="alert-title">Attention Required</h6>
+                            <p class="alert-text">Please review the following items before proceeding.</p>
+                        </div>
+                        <div class="alert-actions">
+                            <button class="btn btn-sm btn-outline-warning">Review</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toast Alerts -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Toast Alerts</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h6>Toast Examples</h6>
+                            <div class="toast-container">
+                                <div class="toast show" role="alert">
+                                    <div class="toast-header">
+                                        <i class="fas fa-info-circle text-primary me-2"></i>
+                                        <strong class="me-auto">Bootstrap</strong>
+                                        <small>11 mins ago</small>
+                                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                                    </div>
+                                    <div class="toast-body">
+                                        Hello, world! This is a toast message.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Toast Actions</h6>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm" onclick="showToast('success')">
+                                    <i class="fas fa-check me-2"></i>Success Toast
+                                </button>
+                                <button class="btn btn-warning btn-sm" onclick="showToast('warning')">
+                                    <i class="fas fa-exclamation-triangle me-2"></i>Warning Toast
+                                </button>
+                                <button class="btn btn-danger btn-sm" onclick="showToast('error')">
+                                    <i class="fas fa-times me-2"></i>Error Toast
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alert with Progress -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Alerts with Progress</h5>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info" role="alert">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-download me-3"></i>
+                            <div class="flex-grow-1">
+                                <h6 class="alert-heading mb-1">Download in Progress</h6>
+                                <p class="mb-2">Downloading file: document.pdf</p>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 65%" id="downloadProgress"></div>
+                                </div>
+                                <small class="text-muted">65% complete</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-upload me-3"></i>
+                            <div class="flex-grow-1">
+                                <h6 class="alert-heading mb-1">Upload Complete</h6>
+                                <p class="mb-2">File uploaded successfully</p>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%"></div>
+                                </div>
+                                <small class="text-muted">100% complete</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Alerts -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Interactive Alerts</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h6>Alert Actions</h6>
+                            <div class="alert alert-primary" role="alert">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <i class="fas fa-bell me-2"></i>
+                                        <strong>Notification</strong><br>
+                                        <small>You have 3 new messages</small>
+                                    </div>
+                                    <div class="alert-actions">
+                                        <button class="btn btn-sm btn-outline-primary me-2">View</button>
+                                        <button class="btn btn-sm btn-outline-secondary">Dismiss</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Alert with Form</h6>
+                            <div class="alert alert-warning" role="alert">
+                                <h6 class="alert-heading">
+                                    <i class="fas fa-exclamation-triangle me-2"></i>
+                                    Action Required
+                                </h6>
+                                <p>Please confirm your email address to continue.</p>
+                                <div class="input-group input-group-sm">
+                                    <input type="email" class="form-control" placeholder="Enter email">
+                                    <button class="btn btn-warning" type="button">Confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alert Variations -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Alert Variations</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h6>Outline Alerts</h6>
+                            <div class="alert alert-outline-primary" role="alert">
+                                <i class="fas fa-info-circle me-2"></i>
+                                This is an outline primary alert.
+                            </div>
+                            <div class="alert alert-outline-success" role="alert">
+                                <i class="fas fa-check-circle me-2"></i>
+                                This is an outline success alert.
+                            </div>
+                            <div class="alert alert-outline-warning" role="alert">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                This is an outline warning alert.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Gradient Alerts</h6>
+                            <div class="alert alert-gradient-primary" role="alert">
+                                <i class="fas fa-star me-2"></i>
+                                This is a gradient primary alert.
+                            </div>
+                            <div class="alert alert-gradient-success" role="alert">
+                                <i class="fas fa-heart me-2"></i>
+                                This is a gradient success alert.
+                            </div>
+                            <div class="alert alert-gradient-warning" role="alert">
+                                <i class="fas fa-sun me-2"></i>
+                                This is a gradient warning alert.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alert Generator -->
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Alert Generator</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <h6>Generate Alerts</h6>
+                            <form id="alertGenerator">
+                                <div class="mb-3">
+                                    <label class="form-label">Alert Type</label>
+                                    <select class="form-select" id="alertType">
+                                        <option value="primary">Primary</option>
+                                        <option value="secondary">Secondary</option>
+                                        <option value="success">Success</option>
+                                        <option value="danger">Danger</option>
+                                        <option value="warning">Warning</option>
+                                        <option value="info">Info</option>
+                                        <option value="light">Light</option>
+                                        <option value="dark">Dark</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Alert Title</label>
+                                    <input type="text" class="form-control" id="alertTitle" placeholder="Enter alert title">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Alert Message</label>
+                                    <textarea class="form-control" id="alertMessage" rows="3" placeholder="Enter alert message"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="dismissible">
+                                        <label class="form-check-label" for="dismissible">
+                                            Dismissible
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary" onclick="generateAlert()">
+                                    <i class="fas fa-plus me-2"></i>Generate Alert
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Generated Alerts</h6>
+                            <div id="generatedAlerts">
+                                <p class="text-muted">No alerts generated yet. Use the form to create alerts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Container -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="dynamicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="fas fa-info-circle text-primary me-2" id="toastIcon"></i>
+                <strong class="me-auto" id="toastTitle">Bootstrap</strong>
+                <small id="toastTime">now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" id="toastBody">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function showToast(type) {
+            const toast = document.getElementById('dynamicToast');
+            const toastIcon = document.getElementById('toastIcon');
+            const toastTitle = document.getElementById('toastTitle');
+            const toastBody = document.getElementById('toastBody');
+            const toastTime = document.getElementById('toastTime');
+            
+            // Set toast content based on type
+            switch (type) {
+                case 'success':
+                    toastIcon.className = 'fas fa-check-circle text-success me-2';
+                    toastTitle.textContent = 'Success';
+                    toastBody.textContent = 'Operation completed successfully!';
+                    break;
+                case 'warning':
+                    toastIcon.className = 'fas fa-exclamation-triangle text-warning me-2';
+                    toastTitle.textContent = 'Warning';
+                    toastBody.textContent = 'Please check your input and try again.';
+                    break;
+                case 'error':
+                    toastIcon.className = 'fas fa-times-circle text-danger me-2';
+                    toastTitle.textContent = 'Error';
+                    toastBody.textContent = 'An error occurred. Please try again.';
+                    break;
+                default:
+                    toastIcon.className = 'fas fa-info-circle text-primary me-2';
+                    toastTitle.textContent = 'Info';
+                    toastBody.textContent = 'This is an information message.';
+            }
+            
+            toastTime.textContent = 'now';
+            
+            // Show toast
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+        }
+        
+        function generateAlert() {
+            const type = document.getElementById('alertType').value;
+            const title = document.getElementById('alertTitle').value;
+            const message = document.getElementById('alertMessage').value;
+            const dismissible = document.getElementById('dismissible').checked;
+            
+            if (!title || !message) {
+                showAlert('Please fill in both title and message fields.', 'warning');
+                return;
+            }
+            
+            const alertId = 'alert-' + Date.now();
+            const dismissibleClass = dismissible ? 'alert-dismissible fade show' : '';
+            const dismissibleButton = dismissible ? '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' : '';
+            
+            const alertHTML = `
+                <div class="alert alert-${type} ${dismissibleClass}" role="alert" id="${alertId}">
+                    <h6 class="alert-heading">${title}</h6>
+                    <p class="mb-0">${message}</p>
+                    ${dismissibleButton}
+                </div>
+            `;
+            
+            const container = document.getElementById('generatedAlerts');
+            if (container.querySelector('.text-muted')) {
+                container.innerHTML = '';
+            }
+            
+            container.insertAdjacentHTML('beforeend', alertHTML);
+            
+            // Clear form
+            document.getElementById('alertTitle').value = '';
+            document.getElementById('alertMessage').value = '';
+            document.getElementById('dismissible').checked = false;
+            
+            showAlert('Alert generated successfully!', 'success');
+        }
+        
+        // Simulate download progress
+        function simulateDownload() {
+            const progressBar = document.getElementById('downloadProgress');
+            let progress = 0;
+            
+            const interval = setInterval(() => {
+                progress += 5;
+                progressBar.style.width = progress + '%';
+                
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        showAlert('Download completed!', 'success');
+                    }, 500);
+                }
+            }, 200);
+        }
+        
+        // Start download simulation when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(simulateDownload, 1000);
+        });
+    </script>
+</body>
+</html>

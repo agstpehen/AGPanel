@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Logs - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-brand"><i class="fas fa-chart-line me-2"></i>AGPanel</a>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav flex-column">
+                <!-- Main Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                
+                <!-- User Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">
+                        <i class="nav-icon fas fa-users"></i>
+                        User Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        Role & Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="nav-icon fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                
+                <!-- Business Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="master-data.html">
+                        <i class="nav-icon fas fa-database"></i>
+                        Master Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales.html">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        Sales & Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-details.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Sales Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-territory-details.html">
+                        <i class="nav-icon fas fa-map-marked-alt"></i>
+                        Territory Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        Inventory Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Reports & Analytics
+                    </a>
+                </li>
+                
+                <!-- Discount Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval.html">
+                        <i class="nav-icon fas fa-percentage"></i>
+                        Discount Approval
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval-cards.html">
+                        <i class="nav-icon fas fa-credit-card"></i>
+                        Discount Cards
+                    </a>
+                </li>
+                
+                <!-- UI Components -->
+                <li class="nav-item">
+                    <a class="nav-link" href="forms.html">
+                        <i class="nav-icon fas fa-edit"></i>
+                        Forms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="nav-icon fas fa-table"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widgets.html">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        Widgets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">
+                        <i class="nav-icon fas fa-mouse-pointer"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="nav-icon fas fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabs.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        Tabs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accordion.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Accordion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <i class="nav-icon fas fa-id-card"></i>
+                        Cards
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alerts.html">
+                        <i class="nav-icon fas fa-exclamation-circle"></i>
+                        Alerts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progress.html">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        Progress
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modals.html">
+                        <i class="nav-icon fas fa-window-maximize"></i>
+                        Modals
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tooltips.html">
+                        <i class="nav-icon fas fa-comment"></i>
+                        Tooltips
+                    </a>
+                </li>
+                
+                <!-- Communication -->
+                <li class="nav-item">
+                    <a class="nav-link" href="inbox.html">
+                        <i class="nav-icon fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="nav-icon fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                
+                <!-- Project Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="nav-icon fas fa-columns"></i>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="nav-icon fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+                
+                <!-- System -->
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <i class="nav-icon fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="logs.html" class="nav-link active">
+                        <i class="nav-icon fas fa-history"></i>
+                        Audit Logs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file-manager.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        File Manager
+                    </a>
+                </li>
+                
+                <!-- Onboarding & Support -->
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">
+                        <i class="nav-icon fas fa-person-walking-arrow-right"></i>
+                        Onboarding
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">
+                        <i class="nav-icon fas fa-circle-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                
+                <!-- Business Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="nav-icon fas fa-tags"></i>
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.html">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        Invoice
+                    </a>
+                </li>
+                
+                <!-- Utility Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blank.html">
+                        <i class="nav-icon fas fa-file"></i>
+                        Blank Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="access-denied.html">
+                        <i class="nav-icon fas fa-ban"></i>
+                        Access Denied
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="404.html">
+                        <i class="nav-icon fas fa-exclamation-triangle"></i>
+                        404 Error
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="500.html">
+                        <i class="nav-icon fas fa-times-circle"></i>
+                        500 Error
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main-content">
+        <header class="header">
+            <button class="btn btn-link d-md-none" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-left">
+                <div class="breadcrumb-container"></div>
+                <h1>Audit Logs</h1>
+                <p class="text-muted mb-0">Track system activities, user actions, and maintain accountability.</p>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div>
+                        <div class="fw-semibold">John Doe</div>
+                        <small class="text-muted">Administrator</small>
+                    </div>
+                    <div class="user-dropdown">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                        <a href="settings.html" class="dropdown-item">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" data-action="logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="stat-value">15,247</div>
+                    <div class="stat-label">Total Logs</div>
+                </div>
+                <div class="stat-card success">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="stat-value">1,456</div>
+                    <div class="stat-label">Login Events</div>
+                </div>
+                <div class="stat-card warning">
+                    <div class="stat-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <div class="stat-value">8,923</div>
+                    <div class="stat-label">Data Changes</div>
+                </div>
+                <div class="stat-card danger">
+                    <div class="stat-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="stat-value">23</div>
+                    <div class="stat-label">Security Events</div>
+                </div>
+            </div>
+
+            <!-- Log Filters -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Log Filters</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                            <label class="form-label">Date Range</label>
+                            <select class="form-select" id="dateRange">
+                                <option value="today">Today</option>
+                                <option value="week">This Week</option>
+                                <option value="month" selected>This Month</option>
+                                <option value="quarter">This Quarter</option>
+                                <option value="year">This Year</option>
+                                <option value="custom">Custom Range</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Event Type</label>
+                            <select class="form-select" id="eventType">
+                                <option value="">All Events</option>
+                                <option value="login">Login/Logout</option>
+                                <option value="data_change">Data Changes</option>
+                                <option value="security">Security Events</option>
+                                <option value="system">System Events</option>
+                                <option value="error">Errors</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">User</label>
+                            <select class="form-select" id="userFilter">
+                                <option value="">All Users</option>
+                                <option value="john.doe">John Doe</option>
+                                <option value="sarah.miller">Sarah Miller</option>
+                                <option value="mike.johnson">Mike Johnson</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">&nbsp;</label>
+                            <div class="d-grid">
+                                <button class="btn btn-primary" onclick="filterLogs()">
+                                    <i class="fas fa-filter me-2"></i>Filter Logs
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Log Tabs -->
+            <div class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="logTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="all-logs-tab" data-bs-toggle="tab" data-bs-target="#all-logs" type="button" role="tab">
+                                <i class="fas fa-list me-2"></i>All Logs
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="login-logs-tab" data-bs-toggle="tab" data-bs-target="#login-logs" type="button" role="tab">
+                                <i class="fas fa-sign-in-alt me-2"></i>Login Events
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="data-logs-tab" data-bs-toggle="tab" data-bs-target="#data-logs" type="button" role="tab">
+                                <i class="fas fa-edit me-2"></i>Data Changes
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="security-logs-tab" data-bs-toggle="tab" data-bs-target="#security-logs" type="button" role="tab">
+                                <i class="fas fa-shield-alt me-2"></i>Security Events
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="system-logs-tab" data-bs-toggle="tab" data-bs-target="#system-logs" type="button" role="tab">
+                                <i class="fas fa-cog me-2"></i>System Events
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content" id="logTabsContent">
+                        <!-- All Logs Tab -->
+                        <div class="tab-pane fade show active" id="all-logs" role="tabpanel">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0">All Audit Logs</h5>
+                                <div class="card-header-actions">
+                                    <button class="btn btn-outline-success btn-sm" onclick="exportLogs('all')">
+                                        <i class="fas fa-file-excel me-2"></i>Export Excel
+                                    </button>
+                                    <button class="btn btn-outline-danger btn-sm" onclick="exportLogs('all', 'pdf')">
+                                        <i class="fas fa-file-pdf me-2"></i>Export PDF
+                                    </button>
+                                    <button class="btn btn-outline-warning btn-sm" onclick="clearLogs()">
+                                        <i class="fas fa-trash me-2"></i>Clear Logs
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Logs Table -->
+                            <div class="table-responsive">
+                                <table class="table table-advanced">
+                                    <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>User</th>
+                                            <th>Event Type</th>
+                                            <th>Action</th>
+                                            <th>Details</th>
+                                            <th>IP Address</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="fw-semibold">2024-01-15 14:30:25</div>
+                                                <small class="text-muted">2 hours ago</small>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-avatar me-2" style="width: 32px; height: 32px; font-size: 0.8rem;">JD</div>
+                                                    <div>
+                                                        <div class="fw-semibold">John Doe</div>
+                                                        <small class="text-muted">Administrator</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-success">Login</span></td>
+                                            <td>User Login</td>
+                                            <td>Successful login from web interface</td>
+                                            <td>192.168.1.100</td>
+                                            <td><span class="badge bg-success">Success</span></td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewLogDetails(1)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="fw-semibold">2024-01-15 14:25:10</div>
+                                                <small class="text-muted">2 hours ago</small>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-avatar me-2" style="width: 32px; height: 32px; font-size: 0.8rem;">SM</div>
+                                                    <div>
+                                                        <div class="fw-semibold">Sarah Miller</div>
+                                                        <small class="text-muted">Manager</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-warning">Data Change</span></td>
+                                            <td>Update Product</td>
+                                            <td>Updated product "Diamond Ring - Classic"</td>
+                                            <td>192.168.1.101</td>
+                                            <td><span class="badge bg-success">Success</span></td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewLogDetails(2)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="fw-semibold">2024-01-15 14:20:45</div>
+                                                <small class="text-muted">2 hours ago</small>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-avatar me-2" style="width: 32px; height: 32px; font-size: 0.8rem;">MJ</div>
+                                                    <div>
+                                                        <div class="fw-semibold">Mike Johnson</div>
+                                                        <small class="text-muted">Staff</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-danger">Security</span></td>
+                                            <td>Failed Login</td>
+                                            <td>Invalid password attempt</td>
+                                            <td>192.168.1.102</td>
+                                            <td><span class="badge bg-danger">Failed</span></td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewLogDetails(3)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="fw-semibold">2024-01-15 14:15:30</div>
+                                                <small class="text-muted">3 hours ago</small>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-avatar me-2" style="width: 32px; height: 32px; font-size: 0.8rem;">EW</div>
+                                                    <div>
+                                                        <div class="fw-semibold">Emily Wilson</div>
+                                                        <small class="text-muted">Staff</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-info">System</span></td>
+                                            <td>Backup Created</td>
+                                            <td>Automated backup completed successfully</td>
+                                            <td>System</td>
+                                            <td><span class="badge bg-success">Success</span></td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewLogDetails(4)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="fw-semibold">2024-01-15 14:10:15</div>
+                                                <small class="text-muted">3 hours ago</small>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-avatar me-2" style="width: 32px; height: 32px; font-size: 0.8rem;">JD</div>
+                                                    <div>
+                                                        <div class="fw-semibold">John Doe</div>
+                                                        <small class="text-muted">Administrator</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-warning">Data Change</span></td>
+                                            <td>Delete User</td>
+                                            <td>Deleted user "temp@example.com"</td>
+                                            <td>192.168.1.100</td>
+                                            <td><span class="badge bg-success">Success</span></td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewLogDetails(5)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Login Logs Tab -->
+                        <div class="tab-pane fade" id="login-logs" role="tabpanel">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0">Login Events</h5>
+                                <div class="card-header-actions">
+                                    <button class="btn btn-outline-success btn-sm" onclick="exportLogs('login')">
+                                        <i class="fas fa-file-excel me-2"></i>Export Excel
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="table-responsive">
+                                <table class="table table-advanced">
+                                    <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>User</th>
+                                            <th>Action</th>
+                                            <th>IP Address</th>
+                                            <th>User Agent</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2024-01-15 14:30:25</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-avatar me-2" style="width: 32px; height: 32px; font-size: 0.8rem;">JD</div>
+                                                    <div>
+                                                        <div class="fw-semibold">John Doe</div>
+                                                        <small class="text-muted">Administrator</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Login</td>
+                                            <td>192.168.1.100</td>
+                                            <td>Mozilla/5.0 (Windows NT 10.0; Win64; x64)</td>
+                                            <td><span class="badge bg-success">Success</span></td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewLogDetails(1)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024-01-15 14:20:45</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-avatar me-2" style="width: 32px; height: 32px; font-size: 0.8rem;">MJ</div>
+                                                    <div>
+                                                        <div class="fw-semibold">Mike Johnson</div>
+                                                        <small class="text-muted">Staff</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Failed Login</td>
+                                            <td>192.168.1.102</td>
+                                            <td>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)</td>
+                                            <td><span class="badge bg-danger">Failed</span></td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewLogDetails(3)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Data Changes Tab -->
+                        <div class="tab-pane fade" id="data-logs" role="tabpanel">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0">Data Changes</h5>
+                                <div class="card-header-actions">
+                                    <button class="btn btn-outline-success btn-sm" onclick="exportLogs('data')">
+                                        <i class="fas fa-file-excel me-2"></i>Export Excel
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="table-responsive">
+                                <table class="table table-advanced">
+                                    <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>User</th>
+                                            <th>Table</th>
+                                            <th>Action</th>
+                                            <th>Record ID</th>
+                                            <th>Changes</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2024-01-15 14:25:10</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-avatar me-2" style="width: 32px; height: 32px; font-size: 0.8rem;">SM</div>
+                                                    <div>
+                                                        <div class="fw-semibold">Sarah Miller</div>
+                                                        <small class="text-muted">Manager</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>products</td>
+                                            <td>UPDATE</td>
+                                            <td>DR001</td>
+                                            <td>Price: $2,500.00 → $2,750.00</td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewLogDetails(2)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024-01-15 14:10:15</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="user-avatar me-2" style="width: 32px; height: 32px; font-size: 0.8rem;">JD</div>
+                                                    <div>
+                                                        <div class="fw-semibold">John Doe</div>
+                                                        <small class="text-muted">Administrator</small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>users</td>
+                                            <td>DELETE</td>
+                                            <td>temp@example.com</td>
+                                            <td>User account deleted</td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewLogDetails(5)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Security Events Tab -->
+                        <div class="tab-pane fade" id="security-logs" role="tabpanel">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0">Security Events</h5>
+                                <div class="card-header-actions">
+                                    <button class="btn btn-outline-success btn-sm" onclick="exportLogs('security')">
+                                        <i class="fas fa-file-excel me-2"></i>Export Excel
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="table-responsive">
+                                <table class="table table-advanced">
+                                    <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>Event Type</th>
+                                            <th>Severity</th>
+                                            <th>Description</th>
+                                            <th>IP Address</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2024-01-15 14:20:45</td>
+                                            <td>Failed Login</td>
+                                            <td><span class="badge bg-warning">Medium</span></td>
+                                            <td>Invalid password attempt for user mike.johnson</td>
+                                            <td>192.168.1.102</td>
+                                            <td><span class="badge bg-danger">Failed</span></td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewLogDetails(3)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                    <button class="btn btn-outline-warning btn-action" onclick="blockIP('192.168.1.102')">
+                                                        <i class="fas fa-ban"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- System Events Tab -->
+                        <div class="tab-pane fade" id="system-logs" role="tabpanel">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="mb-0">System Events</h5>
+                                <div class="card-header-actions">
+                                    <button class="btn btn-outline-success btn-sm" onclick="exportLogs('system')">
+                                        <i class="fas fa-file-excel me-2"></i>Export Excel
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="table-responsive">
+                                <table class="table table-advanced">
+                                    <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>Event Type</th>
+                                            <th>Component</th>
+                                            <th>Message</th>
+                                            <th>Status</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2024-01-15 14:15:30</td>
+                                            <td>Backup</td>
+                                            <td>Database</td>
+                                            <td>Automated backup completed successfully</td>
+                                            <td><span class="badge bg-success">Success</span></td>
+                                            <td>
+                                                <div class="table-actions">
+                                                    <button class="btn btn-outline-primary btn-action" onclick="viewLogDetails(4)">
+                                                        <i class="fas fa-eye"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Log Details Modal -->
+    <div class="modal fade" id="logDetailsModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Log Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Event Information</h6>
+                            <p><strong>Timestamp:</strong> 2024-01-15 14:30:25</p>
+                            <p><strong>Event Type:</strong> <span class="badge bg-success">Login</span></p>
+                            <p><strong>Action:</strong> User Login</p>
+                            <p><strong>Status:</strong> <span class="badge bg-success">Success</span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>User Information</h6>
+                            <p><strong>User:</strong> John Doe (Administrator)</p>
+                            <p><strong>IP Address:</strong> 192.168.1.100</p>
+                            <p><strong>User Agent:</strong> Mozilla/5.0 (Windows NT 10.0; Win64; x64)</p>
+                            <p><strong>Session ID:</strong> sess_abc123def456</p>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h6>Event Details</h6>
+                    <div class="card">
+                        <div class="card-body">
+                            <pre class="mb-0" style="font-size: 0.875rem;">{
+  "event": "user_login",
+  "timestamp": "2024-01-15T14:30:25Z",
+  "user_id": "john.doe",
+  "ip_address": "192.168.1.100",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+  "session_id": "sess_abc123def456",
+  "success": true,
+  "location": "San Francisco, CA, US"
+}</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="exportLogDetails()">
+                        <i class="fas fa-download me-2"></i>Export Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function filterLogs() {
+            const dateRange = document.getElementById('dateRange').value;
+            const eventType = document.getElementById('eventType').value;
+            const userFilter = document.getElementById('userFilter').value;
+            
+            showAlert(`Filtering logs for ${dateRange}...`, 'info');
+        }
+        
+        function viewLogDetails(logId) {
+            const modal = new bootstrap.Modal(document.getElementById('logDetailsModal'));
+            modal.show();
+        }
+        
+        function exportLogs(type, format = 'excel') {
+            showAlert(`Exporting ${type} logs as ${format.toUpperCase()}...`, 'info');
+        }
+        
+        function exportLogDetails() {
+            showAlert('Exporting log details...', 'info');
+        }
+        
+        function clearLogs() {
+            if (confirm('Are you sure you want to clear all logs? This action cannot be undone.')) {
+                const hideLoading = showLoading(event.target);
+                
+                setTimeout(() => {
+                    hideLoading();
+                    showAlert('Logs cleared successfully!', 'success');
+                }, 1000);
+            }
+        }
+        
+        function blockIP(ipAddress) {
+            if (confirm(`Are you sure you want to block IP address ${ipAddress}?`)) {
+                const hideLoading = showLoading(event.target);
+                
+                setTimeout(() => {
+                    hideLoading();
+                    showAlert(`IP address ${ipAddress} blocked successfully!`, 'success');
+                }, 1000);
+            }
+        }
+    </script>
+</body>
+</html>

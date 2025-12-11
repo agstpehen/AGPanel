@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Details - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-brand">
+                <i class="fas fa-chart-line me-2"></i>AGPanel
+            </a>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav flex-column">
+                <!-- Main Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                
+                <!-- User Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">
+                        <i class="nav-icon fas fa-users"></i>
+                        User Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        Role & Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="nav-icon fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                
+                <!-- Business Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="master-data.html">
+                        <i class="nav-icon fas fa-database"></i>
+                        Master Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales.html">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        Sales & Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="sales-details.html" class="nav-link active">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Sales Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-territory-details.html">
+                        <i class="nav-icon fas fa-map-marked-alt"></i>
+                        Territory Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        Inventory Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Reports & Analytics
+                    </a>
+                </li>
+                
+                <!-- Discount Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval.html">
+                        <i class="nav-icon fas fa-percentage"></i>
+                        Discount Approval
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval-cards.html">
+                        <i class="nav-icon fas fa-credit-card"></i>
+                        Discount Cards
+                    </a>
+                </li>
+                
+                <!-- UI Components -->
+                <li class="nav-item">
+                    <a class="nav-link" href="forms.html">
+                        <i class="nav-icon fas fa-edit"></i>
+                        Forms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="nav-icon fas fa-table"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widgets.html">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        Widgets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">
+                        <i class="nav-icon fas fa-mouse-pointer"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="nav-icon fas fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabs.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        Tabs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accordion.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Accordion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <i class="nav-icon fas fa-id-card"></i>
+                        Cards
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alerts.html">
+                        <i class="nav-icon fas fa-exclamation-circle"></i>
+                        Alerts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progress.html">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        Progress
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modals.html">
+                        <i class="nav-icon fas fa-window-maximize"></i>
+                        Modals
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tooltips.html">
+                        <i class="nav-icon fas fa-comment"></i>
+                        Tooltips
+                    </a>
+                </li>
+                
+                <!-- Communication -->
+                <li class="nav-item">
+                    <a class="nav-link" href="inbox.html">
+                        <i class="nav-icon fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="nav-icon fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                
+                <!-- Project Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="nav-icon fas fa-columns"></i>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="nav-icon fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+                
+                <!-- System -->
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <i class="nav-icon fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logs.html">
+                        <i class="nav-icon fas fa-history"></i>
+                        Audit Logs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file-manager.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        File Manager
+                    </a>
+                </li>
+                
+                <!-- Onboarding & Support -->
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">
+                        <i class="nav-icon fas fa-person-walking-arrow-right"></i>
+                        Onboarding
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">
+                        <i class="nav-icon fas fa-circle-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                
+                <!-- Business Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="nav-icon fas fa-tags"></i>
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.html">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        Invoice
+                    </a>
+                </li>
+                
+                <!-- Utility Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blank.html">
+                        <i class="nav-icon fas fa-file"></i>
+                        Blank Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="access-denied.html">
+                        <i class="nav-icon fas fa-ban"></i>
+                        Access Denied
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="404.html">
+                        <i class="nav-icon fas fa-exclamation-triangle"></i>
+                        404 Error
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="500.html">
+                        <i class="nav-icon fas fa-times-circle"></i>
+                        500 Error
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-link d-md-none me-3" id="sidebarToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="header-left">
+                        <h1>Sales Details</h1>
+                        <p class="text-muted mb-0">Comprehensive view of all sales transactions and performance metrics.</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-calendar-alt me-2"></i>Last 30 Days
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="changeTimeRange('7')">Last 7 Days</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeTimeRange('30')">Last 30 Days</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeTimeRange('90')">Last 90 Days</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="changeTimeRange('365')">Last Year</a></li>
+                        </ul>
+                    </div>
+                    <div class="user-profile">
+                        <div class="user-avatar">JD</div>
+                        <div>
+                            <div class="fw-semibold">John Doe</div>
+                            <small class="text-muted">Administrator</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Performance Metrics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-value">$127,450</div>
+                    <div class="stat-label">Total Sales Revenue</div>
+                    <div class="d-flex align-items-center mt-2">
+                        <span class="badge bg-success me-2">+18.5%</span>
+                        <small class="text-muted">vs last period</small>
+                    </div>
+                </div>
+                
+                <div class="stat-card success">
+                    <div class="stat-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="stat-value">342</div>
+                    <div class="stat-label">Total Orders</div>
+                    <div class="d-flex align-items-center mt-2">
+                        <span class="badge bg-success me-2">+12.3%</span>
+                        <small class="text-muted">vs last period</small>
+                    </div>
+                </div>
+                
+                <div class="stat-card warning">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-value">$372</div>
+                    <div class="stat-label">Average Order Value</div>
+                    <div class="d-flex align-items-center mt-2">
+                        <span class="badge bg-success me-2">+5.8%</span>
+                        <small class="text-muted">vs last period</small>
+                    </div>
+                </div>
+                
+                <div class="stat-card danger">
+                    <div class="stat-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <div class="stat-value">23.4%</div>
+                    <div class="stat-label">Conversion Rate</div>
+                    <div class="d-flex align-items-center mt-2">
+                        <span class="badge bg-success me-2">+2.1%</span>
+                        <small class="text-muted">vs last period</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sales Transactions Table -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title">
+                            <i class="fas fa-chart-bar me-2"></i>Sales Transactions
+                        </h5>
+                        <div class="d-flex gap-2">
+                            <div class="input-group" style="width: 300px;">
+                                <span class="input-group-text">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <input type="text" class="form-control table-search" placeholder="Search transactions...">
+                            </div>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-download me-2"></i>Export
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table data-table">
+                            <thead>
+                                <tr>
+                                    <th data-sort="1">
+                                        <i class="fas fa-sort me-1"></i>Transaction ID
+                                    </th>
+                                    <th data-sort="2">
+                                        <i class="fas fa-sort me-1"></i>Customer
+                                    </th>
+                                    <th data-sort="3">
+                                        <i class="fas fa-sort me-1"></i>Products
+                                    </th>
+                                    <th data-sort="4">
+                                        <i class="fas fa-sort me-1"></i>Quantity
+                                    </th>
+                                    <th data-sort="5">
+                                        <i class="fas fa-sort me-1"></i>Unit Price
+                                    </th>
+                                    <th data-sort="6">
+                                        <i class="fas fa-sort me-1"></i>Discount
+                                    </th>
+                                    <th data-sort="7">
+                                        <i class="fas fa-sort me-1"></i>Total Amount
+                                    </th>
+                                    <th data-sort="8">
+                                        <i class="fas fa-sort me-1"></i>Payment Method
+                                    </th>
+                                    <th data-sort="9">
+                                        <i class="fas fa-sort me-1"></i>Status
+                                    </th>
+                                    <th data-sort="10">
+                                        <i class="fas fa-sort me-1"></i>Date
+                                    </th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>#TXN001</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem;">JD</div>
+                                            <div>
+                                                <div class="fw-semibold">John Doe</div>
+                                                <small class="text-muted">Acme Corp</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-thumb me-2">
+                                                <i class="fas fa-laptop"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">MacBook Pro 16"</div>
+                                                <small class="text-muted">M3 Chip, 32GB RAM</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-primary">1</span></td>
+                                    <td><strong>$2,499.00</strong></td>
+                                    <td><span class="badge bg-success">-5%</span></td>
+                                    <td><strong>$2,374.05</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-credit-card me-2 text-primary"></i>
+                                            <span>Credit Card</span>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-success">Completed</span></td>
+                                    <td>2024-02-20 14:30</td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="btn btn-outline-success" data-bs-toggle="tooltip" title="Invoice">
+                                                <i class="fas fa-file-invoice"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#TXN002</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem; background: var(--success-gradient);">SM</div>
+                                            <div>
+                                                <div class="fw-semibold">Sarah Miller</div>
+                                                <small class="text-muted">Tech Solutions</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-thumb me-2" style="background: var(--success-gradient);">
+                                                <i class="fas fa-mobile-alt"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">iPhone 15 Pro</div>
+                                                <small class="text-muted">256GB, Space Black</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-primary">2</span></td>
+                                    <td><strong>$999.00</strong></td>
+                                    <td><span class="badge bg-warning">-10%</span></td>
+                                    <td><strong>$1,798.20</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-university me-2 text-success"></i>
+                                            <span>Bank Transfer</span>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-success">Completed</span></td>
+                                    <td>2024-02-20 11:45</td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="btn btn-outline-success" data-bs-toggle="tooltip" title="Invoice">
+                                                <i class="fas fa-file-invoice"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#TXN003</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem; background: var(--warning-gradient);">MJ</div>
+                                            <div>
+                                                <div class="fw-semibold">Mike Johnson</div>
+                                                <small class="text-muted">Global Inc</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-thumb me-2" style="background: var(--warning-gradient);">
+                                                <i class="fas fa-headphones"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">AirPods Pro 2nd Gen</div>
+                                                <small class="text-muted">USB-C, Active Noise Cancellation</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-primary">1</span></td>
+                                    <td><strong>$249.00</strong></td>
+                                    <td><span class="badge bg-info">-0%</span></td>
+                                    <td><strong>$249.00</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fab fa-paypal me-2 text-info"></i>
+                                            <span>PayPal</span>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-warning">Processing</span></td>
+                                    <td>2024-02-20 09:15</td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="btn btn-outline-success" data-bs-toggle="tooltip" title="Invoice">
+                                                <i class="fas fa-file-invoice"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#TXN004</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem; background: var(--danger-gradient);">EW</div>
+                                            <div>
+                                                <div class="fw-semibold">Emily Wilson</div>
+                                                <small class="text-muted">Creative Agency</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-thumb me-2" style="background: var(--danger-gradient);">
+                                                <i class="fas fa-tshirt"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">Cotton T-Shirt</div>
+                                                <small class="text-muted">Premium Cotton, Multiple Colors</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-primary">5</span></td>
+                                    <td><strong>$29.99</strong></td>
+                                    <td><span class="badge bg-success">-15%</span></td>
+                                    <td><strong>$127.46</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-credit-card me-2 text-primary"></i>
+                                            <span>Credit Card</span>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-info">Shipped</span></td>
+                                    <td>2024-02-19 16:20</td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="btn btn-outline-success" data-bs-toggle="tooltip" title="Invoice">
+                                                <i class="fas fa-file-invoice"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#TXN005</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem; background: var(--info-gradient);">RB</div>
+                                            <div>
+                                                <div class="fw-semibold">Robert Brown</div>
+                                                <small class="text-muted">Finance Corp</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-thumb me-2" style="background: var(--info-gradient);">
+                                                <i class="fas fa-book"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">Business Strategy Book</div>
+                                                <small class="text-muted">Hardcover, Latest Edition</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-primary">3</span></td>
+                                    <td><strong>$19.99</strong></td>
+                                    <td><span class="badge bg-success">-20%</span></td>
+                                    <td><strong>$47.98</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-university me-2 text-success"></i>
+                                            <span>Bank Transfer</span>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-success">Completed</span></td>
+                                    <td>2024-02-19 13:10</td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="btn btn-outline-success" data-bs-toggle="tooltip" title="Invoice">
+                                                <i class="fas fa-file-invoice"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#TXN006</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem;">TG</div>
+                                            <div>
+                                                <div class="fw-semibold">Tom Garcia</div>
+                                                <small class="text-muted">Startup Inc</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-thumb me-2">
+                                                <i class="fas fa-laptop"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">MacBook Air M2</div>
+                                                <small class="text-muted">8GB RAM, 256GB SSD</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-primary">1</span></td>
+                                    <td><strong>$1,199.00</strong></td>
+                                    <td><span class="badge bg-success">-12%</span></td>
+                                    <td><strong>$1,055.12</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-credit-card me-2 text-primary"></i>
+                                            <span>Credit Card</span>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-success">Completed</span></td>
+                                    <td>2024-02-18 10:30</td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="btn btn-outline-success" data-bs-toggle="tooltip" title="Invoice">
+                                                <i class="fas fa-file-invoice"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#TXN007</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem; background: var(--success-gradient);">AL</div>
+                                            <div>
+                                                <div class="fw-semibold">Anna Lee</div>
+                                                <small class="text-muted">Marketing Pro</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-thumb me-2" style="background: var(--success-gradient);">
+                                                <i class="fas fa-tablet-alt"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">iPad Pro 12.9"</div>
+                                                <small class="text-muted">M2 Chip, 128GB, Wi-Fi</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-primary">2</span></td>
+                                    <td><strong>$1,099.00</strong></td>
+                                    <td><span class="badge bg-warning">-8%</span></td>
+                                    <td><strong>$2,022.16</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <i class="fab fa-paypal me-2 text-info"></i>
+                                            <span>PayPal</span>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge bg-danger">Cancelled</span></td>
+                                    <td>2024-02-18 08:45</td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="btn btn-outline-danger" data-bs-toggle="tooltip" title="Refund">
+                                                <i class="fas fa-undo"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sales Analytics -->
+            <div class="row mt-4">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                <i class="fas fa-chart-line me-2"></i>Sales Performance Trends
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container" style="height: 300px;">
+                                <canvas id="salesTrendChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                <i class="fas fa-chart-pie me-2"></i>Sales by Category
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container" style="height: 300px;">
+                                <canvas id="categoryChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Performers -->
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                <i class="fas fa-trophy me-2"></i>Top Selling Products
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="top-performers">
+                                <div class="performer-item">
+                                    <div class="performer-rank">1</div>
+                                    <div class="performer-info">
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-thumb me-3">
+                                                <i class="fas fa-laptop"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">MacBook Pro 16"</div>
+                                                <small class="text-muted">$74,970 revenue</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="performer-stats">
+                                        <span class="badge bg-success">30 sold</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="performer-item">
+                                    <div class="performer-rank">2</div>
+                                    <div class="performer-info">
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-thumb me-3" style="background: var(--success-gradient);">
+                                                <i class="fas fa-mobile-alt"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">iPhone 15 Pro</div>
+                                                <small class="text-muted">$39,960 revenue</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="performer-stats">
+                                        <span class="badge bg-success">40 sold</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="performer-item">
+                                    <div class="performer-rank">3</div>
+                                    <div class="performer-info">
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-thumb me-3" style="background: var(--warning-gradient);">
+                                                <i class="fas fa-headphones"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">AirPods Pro</div>
+                                                <small class="text-muted">$7,470 revenue</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="performer-stats">
+                                        <span class="badge bg-success">30 sold</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title">
+                                <i class="fas fa-users me-2"></i>Top Customers
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="top-performers">
+                                <div class="performer-item">
+                                    <div class="performer-rank">1</div>
+                                    <div class="performer-info">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-3" style="width: 35px; height: 35px; font-size: 0.9rem;">JD</div>
+                                            <div>
+                                                <div class="fw-semibold">John Doe</div>
+                                                <small class="text-muted">Acme Corp</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="performer-stats">
+                                        <span class="badge bg-success">$8,450</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="performer-item">
+                                    <div class="performer-rank">2</div>
+                                    <div class="performer-info">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-3" style="width: 35px; height: 35px; font-size: 0.9rem; background: var(--success-gradient);">SM</div>
+                                            <div>
+                                                <div class="fw-semibold">Sarah Miller</div>
+                                                <small class="text-muted">Tech Solutions</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="performer-stats">
+                                        <span class="badge bg-success">$6,780</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="performer-item">
+                                    <div class="performer-rank">3</div>
+                                    <div class="performer-info">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-3" style="width: 35px; height: 35px; font-size: 0.9rem; background: var(--warning-gradient);">MJ</div>
+                                            <div>
+                                                <div class="fw-semibold">Mike Johnson</div>
+                                                <small class="text-muted">Global Inc</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="performer-stats">
+                                        <span class="badge bg-success">$5,230</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <style>
+        .product-thumb {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        .top-performers {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .performer-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: var(--light-bg);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .performer-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        .performer-rank {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: var(--primary-gradient);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+        
+        .performer-info {
+            flex: 1;
+        }
+        
+        .performer-stats {
+            margin-left: auto;
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .input-group-text {
+            background: var(--light-bg);
+            border-color: var(--border-color);
+            color: var(--text-secondary);
+        }
+        
+        .btn-group-sm .btn {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+        }
+        
+        .table th {
+            border-top: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+        }
+        
+        .table th[data-sort] {
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .table th[data-sort]:hover {
+            background-color: var(--light-bg);
+        }
+    </style>
+    
+    <script>
+        function changeTimeRange(days) {
+            // Update the button text
+            const button = document.querySelector('[data-bs-toggle="dropdown"]');
+            const text = days === '7' ? 'Last 7 Days' : 
+                        days === '30' ? 'Last 30 Days' : 
+                        days === '90' ? 'Last 90 Days' : 'Last Year';
+            button.innerHTML = `<i class="fas fa-calendar-alt me-2"></i>${text}`;
+            
+            // Here you would typically make an API call to fetch data for the selected range
+            console.log(`Changing time range to ${days} days`);
+        }
+        
+        // Initialize additional charts for sales details
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sales Trend Chart
+            const salesTrendCtx = document.getElementById('salesTrendChart');
+            if (salesTrendCtx) {
+                new Chart(salesTrendCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                        datasets: [{
+                            label: 'Sales Revenue',
+                            data: [28500, 31200, 28900, 38850],
+                            borderColor: '#667eea',
+                            backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                            borderWidth: 3,
+                            fill: true,
+                            tension: 0.4,
+                            pointBackgroundColor: '#667eea',
+                            pointBorderColor: '#ffffff',
+                            pointBorderWidth: 2,
+                            pointRadius: 6
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: {
+                                    color: 'rgba(0, 0, 0, 0.05)'
+                                },
+                                ticks: {
+                                    callback: function(value) {
+                                        return '$' + value.toLocaleString();
+                                    }
+                                }
+                            },
+                            x: {
+                                grid: {
+                                    display: false
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+            
+            // Category Chart
+            const categoryCtx = document.getElementById('categoryChart');
+            if (categoryCtx) {
+                new Chart(categoryCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Electronics', 'Clothing', 'Books', 'Accessories'],
+                        datasets: [{
+                            data: [65, 20, 10, 5],
+                            backgroundColor: [
+                                '#667eea',
+                                '#f093fb',
+                                '#4facfe',
+                                '#43e97b'
+                            ],
+                            borderWidth: 0,
+                            cutout: '70%'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    padding: 15,
+                                    usePointStyle: true
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

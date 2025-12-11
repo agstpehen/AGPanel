@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-brand"><i class="fas fa-chart-line me-2"></i>AGPanel</a>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav flex-column">
+                <!-- Main Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                
+                <!-- User Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">
+                        <i class="nav-icon fas fa-users"></i>
+                        User Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        Role & Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="nav-icon fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                
+                <!-- Business Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="master-data.html">
+                        <i class="nav-icon fas fa-database"></i>
+                        Master Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales.html">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        Sales & Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-details.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Sales Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-territory-details.html">
+                        <i class="nav-icon fas fa-map-marked-alt"></i>
+                        Territory Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        Inventory Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Reports & Analytics
+                    </a>
+                </li>
+                
+                <!-- Discount Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval.html">
+                        <i class="nav-icon fas fa-percentage"></i>
+                        Discount Approval
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval-cards.html">
+                        <i class="nav-icon fas fa-credit-card"></i>
+                        Discount Cards
+                    </a>
+                </li>
+                
+                <!-- UI Components -->
+                <li class="nav-item">
+                    <a class="nav-link" href="forms.html">
+                        <i class="nav-icon fas fa-edit"></i>
+                        Forms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="nav-icon fas fa-table"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widgets.html">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        Widgets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">
+                        <i class="nav-icon fas fa-mouse-pointer"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="nav-icon fas fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabs.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        Tabs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="accordion.html" class="nav-link active">
+                        <i class="nav-icon fas fa-list"></i>
+                        Accordion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <i class="nav-icon fas fa-id-card"></i>
+                        Cards
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alerts.html">
+                        <i class="nav-icon fas fa-exclamation-circle"></i>
+                        Alerts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progress.html">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        Progress
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modals.html">
+                        <i class="nav-icon fas fa-window-maximize"></i>
+                        Modals
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tooltips.html">
+                        <i class="nav-icon fas fa-comment"></i>
+                        Tooltips
+                    </a>
+                </li>
+                
+                <!-- Communication -->
+                <li class="nav-item">
+                    <a class="nav-link" href="inbox.html">
+                        <i class="nav-icon fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="nav-icon fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                
+                <!-- Project Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="nav-icon fas fa-columns"></i>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="nav-icon fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+                
+                <!-- System -->
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <i class="nav-icon fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logs.html">
+                        <i class="nav-icon fas fa-history"></i>
+                        Audit Logs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file-manager.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        File Manager
+                    </a>
+                </li>
+                
+                <!-- Onboarding & Support -->
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">
+                        <i class="nav-icon fas fa-person-walking-arrow-right"></i>
+                        Onboarding
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">
+                        <i class="nav-icon fas fa-circle-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                
+                <!-- Business Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="nav-icon fas fa-tags"></i>
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.html">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        Invoice
+                    </a>
+                </li>
+                
+                <!-- Utility Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blank.html">
+                        <i class="nav-icon fas fa-file"></i>
+                        Blank Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="access-denied.html">
+                        <i class="nav-icon fas fa-ban"></i>
+                        Access Denied
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="404.html">
+                        <i class="nav-icon fas fa-exclamation-triangle"></i>
+                        404 Error
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="500.html">
+                        <i class="nav-icon fas fa-times-circle"></i>
+                        500 Error
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main-content">
+        <header class="header">
+            <button class="btn btn-link d-md-none" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+            <div class="header-left">
+                <div class="breadcrumb-container"></div>
+                <h1>Accordion</h1>
+                <p class="text-muted mb-0">Collapsible content panels with various styles and configurations.</p>
+            </div>
+            <div class="header-right">
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div>
+                        <div class="fw-semibold">John Doe</div>
+                        <small class="text-muted">Administrator</small>
+                    </div>
+                    <div class="user-dropdown">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fas fa-user"></i> Profile
+                        </a>
+                        <a href="settings.html" class="dropdown-item">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" data-action="logout">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- Basic Accordion -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Basic Accordion</h5>
+                </div>
+                <div class="card-body">
+                    <div class="accordion" id="basicAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fas fa-info-circle me-2"></i>
+                                    What is AGPanel?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#basicAccordion">
+                                <div class="accordion-body">
+                                    <strong>AGPanel</strong> is a professional admin dashboard template built with Bootstrap 5. It provides a comprehensive set of components, pages, and features for building modern web applications. The template includes user management, analytics, reporting, and many other essential admin panel features.
+                                    <br><br>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Modern Design</h6>
+                                                    <p class="card-text">Clean and professional interface</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Responsive</h6>
+                                                    <p class="card-text">Works on all devices</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fas fa-cog me-2"></i>
+                                    How to customize?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#basicAccordion">
+                                <div class="accordion-body">
+                                    AGPanel is highly customizable. You can modify colors, layouts, and components to match your brand. Here are some customization options:
+                                    <ul class="mt-3">
+                                        <li>Modify CSS variables for color schemes</li>
+                                        <li>Add or remove components as needed</li>
+                                        <li>Customize the sidebar navigation</li>
+                                        <li>Modify the dashboard layout</li>
+                                        <li>Add your own pages and features</li>
+                                    </ul>
+                                    <div class="alert alert-info mt-3">
+                                        <i class="fas fa-lightbulb me-2"></i>
+                                        Check the documentation for detailed customization guides.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas fa-question-circle me-2"></i>
+                                    Support and updates
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#basicAccordion">
+                                <div class="accordion-body">
+                                    We provide comprehensive support and regular updates for AGPanel:
+                                    <div class="row g-3 mt-3">
+                                        <div class="col-md-4">
+                                            <div class="text-center">
+                                                <i class="fas fa-headset text-primary mb-2" style="font-size: 2rem;"></i>
+                                                <h6>24/7 Support</h6>
+                                                <p class="text-muted">Round-the-clock assistance</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="text-center">
+                                                <i class="fas fa-sync text-success mb-2" style="font-size: 2rem;"></i>
+                                                <h6>Regular Updates</h6>
+                                                <p class="text-muted">Monthly feature updates</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="text-center">
+                                                <i class="fas fa-book text-info mb-2" style="font-size: 2rem;"></i>
+                                                <h6>Documentation</h6>
+                                                <p class="text-muted">Comprehensive guides</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flush Accordion -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Flush Accordion</h5>
+                </div>
+                <div class="card-body">
+                    <div class="accordion accordion-flush" id="flushAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <i class="fas fa-user me-2"></i>
+                                    User Management
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#flushAccordion">
+                                <div class="accordion-body">
+                                    Manage users, roles, and permissions with our comprehensive user management system.
+                                    <div class="table-responsive mt-3">
+                                        <table class="table table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Feature</th>
+                                                    <th>Description</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>User Creation</td>
+                                                    <td>Add new users to the system</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Role Assignment</td>
+                                                    <td>Assign roles and permissions</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Password Reset</td>
+                                                    <td>Reset user passwords</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <i class="fas fa-chart-bar me-2"></i>
+                                    Analytics & Reports
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#flushAccordion">
+                                <div class="accordion-body">
+                                    Generate detailed reports and analyze your data with powerful analytics tools.
+                                    <div class="row g-3 mt-3">
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Sales Reports</h6>
+                                                    <p class="card-text">Daily, weekly, and monthly sales analysis</p>
+                                                    <button class="btn btn-primary btn-sm">Generate Report</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">User Analytics</h6>
+                                                    <p class="card-text">User behavior and engagement metrics</p>
+                                                    <button class="btn btn-success btn-sm">View Analytics</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <i class="fas fa-cog me-2"></i>
+                                    System Settings
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#flushAccordion">
+                                <div class="accordion-body">
+                                    Configure system-wide settings and preferences.
+                                    <form class="mt-3">
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">System Name</label>
+                                                <input type="text" class="form-control" value="AGPanel">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Timezone</label>
+                                                <select class="form-select">
+                                                    <option value="UTC">UTC</option>
+                                                    <option value="America/New_York" selected>Eastern Time</option>
+                                                    <option value="America/Chicago">Central Time</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="maintenanceMode">
+                                                    <label class="form-check-label" for="maintenanceMode">Maintenance Mode</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="debugMode" checked>
+                                                    <label class="form-check-label" for="debugMode">Debug Mode</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Always Open Accordion -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Always Open Accordion</h5>
+                </div>
+                <div class="card-body">
+                    <div class="accordion" id="alwaysOpenAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="alwaysOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#alwaysOpen-collapseOne" aria-expanded="true" aria-controls="alwaysOpen-collapseOne">
+                                    <i class="fas fa-star me-2"></i>
+                                    Featured Features
+                                </button>
+                            </h2>
+                            <div id="alwaysOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="alwaysOpen-headingOne">
+                                <div class="accordion-body">
+                                    Discover the most popular and useful features of AGPanel.
+                                    <div class="row g-3 mt-3">
+                                        <div class="col-md-4">
+                                            <div class="feature-card">
+                                                <div class="feature-icon bg-primary">
+                                                    <i class="fas fa-tachometer-alt"></i>
+                                                </div>
+                                                <h6>Dashboard</h6>
+                                                <p class="text-muted">Comprehensive overview of your system</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="feature-card">
+                                                <div class="feature-icon bg-success">
+                                                    <i class="fas fa-users"></i>
+                                                </div>
+                                                <h6>User Management</h6>
+                                                <p class="text-muted">Complete user administration</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="feature-card">
+                                                <div class="feature-icon bg-warning">
+                                                    <i class="fas fa-chart-line"></i>
+                                                </div>
+                                                <h6>Analytics</h6>
+                                                <p class="text-muted">Advanced reporting and insights</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="alwaysOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#alwaysOpen-collapseTwo" aria-expanded="false" aria-controls="alwaysOpen-collapseTwo">
+                                    <i class="fas fa-rocket me-2"></i>
+                                    Getting Started
+                                </button>
+                            </h2>
+                            <div id="alwaysOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="alwaysOpen-headingTwo">
+                                <div class="accordion-body">
+                                    Quick start guide to get you up and running with AGPanel.
+                                    <div class="steps-container mt-3">
+                                        <div class="step-item">
+                                            <div class="step-number">1</div>
+                                            <div class="step-content">
+                                                <h6>Installation</h6>
+                                                <p>Download and extract the template files</p>
+                                            </div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="step-number">2</div>
+                                            <div class="step-content">
+                                                <h6>Configuration</h6>
+                                                <p>Configure your database and settings</p>
+                                            </div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="step-number">3</div>
+                                            <div class="step-content">
+                                                <h6>Customization</h6>
+                                                <p>Customize colors, layouts, and features</p>
+                                            </div>
+                                        </div>
+                                        <div class="step-item">
+                                            <div class="step-number">4</div>
+                                            <div class="step-content">
+                                                <h6>Deployment</h6>
+                                                <p>Deploy to your web server</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="alwaysOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#alwaysOpen-collapseThree" aria-expanded="false" aria-controls="alwaysOpen-collapseThree">
+                                    <i class="fas fa-life-ring me-2"></i>
+                                    Support & Help
+                                </button>
+                            </h2>
+                            <div id="alwaysOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="alwaysOpen-headingThree">
+                                <div class="accordion-body">
+                                    Get help and support when you need it.
+                                    <div class="row g-3 mt-3">
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body text-center">
+                                                    <i class="fas fa-book text-primary mb-3" style="font-size: 2rem;"></i>
+                                                    <h6>Documentation</h6>
+                                                    <p class="text-muted">Comprehensive guides and tutorials</p>
+                                                    <button class="btn btn-outline-primary btn-sm">Read Docs</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-body text-center">
+                                                    <i class="fas fa-comments text-success mb-3" style="font-size: 2rem;"></i>
+                                                    <h6>Community</h6>
+                                                    <p class="text-muted">Join our community forum</p>
+                                                    <button class="btn btn-outline-success btn-sm">Join Forum</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Styled Accordion -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Custom Styled Accordion</h5>
+                </div>
+                <div class="card-body">
+                    <div class="accordion custom-accordion" id="customAccordion">
+                        <div class="accordion-item custom-accordion-item">
+                            <h2 class="accordion-header" id="custom-headingOne">
+                                <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#custom-collapseOne" aria-expanded="true" aria-controls="custom-collapseOne">
+                                    <div class="d-flex align-items-center">
+                                        <div class="accordion-icon bg-primary me-3">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Dashboard Overview</h6>
+                                            <small class="text-muted">Monitor your key metrics</small>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="custom-collapseOne" class="accordion-collapse collapse show" aria-labelledby="custom-headingOne" data-bs-parent="#customAccordion">
+                                <div class="accordion-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-3">
+                                            <div class="stat-card">
+                                                <div class="stat-icon bg-primary">
+                                                    <i class="fas fa-users"></i>
+                                                </div>
+                                                <div class="stat-value">1,247</div>
+                                                <div class="stat-label">Total Users</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="stat-card">
+                                                <div class="stat-icon bg-success">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                </div>
+                                                <div class="stat-value">$45,230</div>
+                                                <div class="stat-label">Revenue</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="stat-card">
+                                                <div class="stat-icon bg-warning">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                                <div class="stat-value">892</div>
+                                                <div class="stat-label">Orders</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="stat-card">
+                                                <div class="stat-icon bg-info">
+                                                    <i class="fas fa-box"></i>
+                                                </div>
+                                                <div class="stat-value">156</div>
+                                                <div class="stat-label">Products</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item custom-accordion-item">
+                            <h2 class="accordion-header" id="custom-headingTwo">
+                                <button class="accordion-button custom-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#custom-collapseTwo" aria-expanded="false" aria-controls="custom-collapseTwo">
+                                    <div class="d-flex align-items-center">
+                                        <div class="accordion-icon bg-success me-3">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">Analytics & Reports</h6>
+                                            <small class="text-muted">Detailed insights and analysis</small>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="custom-collapseTwo" class="accordion-collapse collapse" aria-labelledby="custom-headingTwo" data-bs-parent="#customAccordion">
+                                <div class="accordion-body">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h6 class="card-title mb-0">Sales Performance</h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="progress mb-2" style="height: 8px;">
+                                                        <div class="progress-bar bg-primary" style="width: 75%"></div>
+                                                    </div>
+                                                    <small class="text-muted">75% of monthly target achieved</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h6 class="card-title mb-0">User Growth</h6>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="progress mb-2" style="height: 8px;">
+                                                        <div class="progress-bar bg-success" style="width: 60%"></div>
+                                                    </div>
+                                                    <small class="text-muted">60% growth this quarter</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item custom-accordion-item">
+                            <h2 class="accordion-header" id="custom-headingThree">
+                                <button class="accordion-button custom-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#custom-collapseThree" aria-expanded="false" aria-controls="custom-collapseThree">
+                                    <div class="d-flex align-items-center">
+                                        <div class="accordion-icon bg-warning me-3">
+                                            <i class="fas fa-cog"></i>
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">System Configuration</h6>
+                                            <small class="text-muted">Manage system settings</small>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="custom-collapseThree" class="accordion-collapse collapse" aria-labelledby="custom-headingThree" data-bs-parent="#customAccordion">
+                                <div class="accordion-body">
+                                    <form>
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label">System Name</label>
+                                                <input type="text" class="form-control" value="AGPanel">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Version</label>
+                                                <input type="text" class="form-control" value="1.0.0" readonly>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Environment</label>
+                                                <select class="form-select">
+                                                    <option value="development">Development</option>
+                                                    <option value="staging">Staging</option>
+                                                    <option value="production" selected>Production</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label">Log Level</label>
+                                                <select class="form-select">
+                                                    <option value="error">Error</option>
+                                                    <option value="warning">Warning</option>
+                                                    <option value="info" selected>Info</option>
+                                                    <option value="debug">Debug</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Accordion -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">Dynamic Accordion</h5>
+                        <button class="btn btn-primary btn-sm" onclick="addAccordionItem()">
+                            <i class="fas fa-plus me-2"></i>Add Item
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="accordion" id="dynamicAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="dynamic-heading-1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dynamic-collapse-1" aria-expanded="true" aria-controls="dynamic-collapse-1">
+                                    <i class="fas fa-star me-2"></i>
+                                    Default Item 1
+                                    <button class="btn-close btn-close-sm ms-auto" onclick="removeAccordionItem(1)" style="font-size: 0.7rem;"></button>
+                                </button>
+                            </h2>
+                            <div id="dynamic-collapse-1" class="accordion-collapse collapse show" aria-labelledby="dynamic-heading-1" data-bs-parent="#dynamicAccordion">
+                                <div class="accordion-body">
+                                    This is the first default accordion item. You can add more items dynamically using the "Add Item" button.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="dynamic-heading-2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dynamic-collapse-2" aria-expanded="false" aria-controls="dynamic-collapse-2">
+                                    <i class="fas fa-heart me-2"></i>
+                                    Default Item 2
+                                    <button class="btn-close btn-close-sm ms-auto" onclick="removeAccordionItem(2)" style="font-size: 0.7rem;"></button>
+                                </button>
+                            </h2>
+                            <div id="dynamic-collapse-2" class="accordion-collapse collapse" aria-labelledby="dynamic-heading-2" data-bs-parent="#dynamicAccordion">
+                                <div class="accordion-body">
+                                    This is the second default accordion item. Each item can contain different content and can be removed individually.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        let accordionCounter = 2;
+
+        function addAccordionItem() {
+            accordionCounter++;
+            const itemId = `dynamic-item-${accordionCounter}`;
+            const headingId = `dynamic-heading-${accordionCounter}`;
+            const collapseId = `dynamic-collapse-${accordionCounter}`;
+            
+            const accordionItem = document.createElement('div');
+            accordionItem.className = 'accordion-item';
+            accordionItem.id = itemId;
+            accordionItem.innerHTML = `
+                <h2 class="accordion-header" id="${headingId}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">
+                        <i class="fas fa-plus me-2"></i>
+                        Dynamic Item ${accordionCounter}
+                        <button class="btn-close btn-close-sm ms-auto" onclick="removeAccordionItem(${accordionCounter})" style="font-size: 0.7rem;"></button>
+                    </button>
+                </h2>
+                <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="${headingId}" data-bs-parent="#dynamicAccordion">
+                    <div class="accordion-body">
+                        <h6>Dynamic Content ${accordionCounter}</h6>
+                        <p>This accordion item was created dynamically. You can add any content here, including forms, tables, charts, or other components.</p>
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-2"></i>
+                            This item was added at ${new Date().toLocaleTimeString()}
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm" onclick="customizeItem(${accordionCounter})">
+                            <i class="fas fa-edit me-1"></i>Customize
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('dynamicAccordion').appendChild(accordionItem);
+            showAlert(`Accordion item ${accordionCounter} added successfully!`, 'success');
+        }
+
+        function removeAccordionItem(itemNumber) {
+            const item = document.getElementById(`dynamic-item-${itemNumber}`);
+            if (item) {
+                if (confirm(`Are you sure you want to remove item ${itemNumber}?`)) {
+                    item.remove();
+                    showAlert(`Accordion item ${itemNumber} removed successfully!`, 'success');
+                }
+            }
+        }
+
+        function customizeItem(itemNumber) {
+            const item = document.getElementById(`dynamic-item-${itemNumber}`);
+            if (item) {
+                const title = prompt('Enter new title:', `Dynamic Item ${itemNumber}`);
+                if (title) {
+                    const button = item.querySelector('.accordion-button');
+                    button.innerHTML = `
+                        <i class="fas fa-edit me-2"></i>
+                        ${title}
+                        <button class="btn-close btn-close-sm ms-auto" onclick="removeAccordionItem(${itemNumber})" style="font-size: 0.7rem;"></button>
+                    `;
+                    showAlert(`Item ${itemNumber} customized successfully!`, 'success');
+                }
+            }
+        }
+    </script>
+</body>
+</html>

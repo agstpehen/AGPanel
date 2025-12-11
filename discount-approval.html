@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Approval - AGPanel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="dashboard.html" class="sidebar-brand">
+                <i class="fas fa-chart-line me-2"></i>AGPanel
+            </a>
+        </div>
+        <div class="sidebar-nav">
+            <ul class="nav flex-column">
+                <!-- Main Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                
+                <!-- User Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html">
+                        <i class="nav-icon fas fa-users"></i>
+                        User Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        Role & Permissions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <i class="nav-icon fas fa-user"></i>
+                        Profile
+                    </a>
+                </li>
+                
+                <!-- Business Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="master-data.html">
+                        <i class="nav-icon fas fa-database"></i>
+                        Master Data
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales.html">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        Sales & Transactions
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-details.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Sales Details
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sales-territory-details.html">
+                        <i class="nav-icon fas fa-map-marked-alt"></i>
+                        Territory Sales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inventory.html">
+                        <i class="nav-icon fas fa-boxes"></i>
+                        Inventory Management
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reports.html">
+                        <i class="nav-icon fas fa-chart-bar"></i>
+                        Reports & Analytics
+                    </a>
+                </li>
+                
+                <!-- Discount Management -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="discount-approval.html" class="nav-link active">
+                        <i class="nav-icon fas fa-percentage"></i>
+                        Discount Approval
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="discount-approval-cards.html">
+                        <i class="nav-icon fas fa-credit-card"></i>
+                        Discount Cards
+                    </a>
+                </li>
+                
+                <!-- UI Components -->
+                <li class="nav-item">
+                    <a class="nav-link" href="forms.html">
+                        <i class="nav-icon fas fa-edit"></i>
+                        Forms
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="nav-icon fas fa-table"></i>
+                        Tables
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="nav-icon fas fa-chart-pie"></i>
+                        Charts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widgets.html">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        Widgets
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">
+                        <i class="nav-icon fas fa-mouse-pointer"></i>
+                        Buttons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">
+                        <i class="nav-icon fas fa-images"></i>
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tabs.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        Tabs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accordion.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Accordion
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cards.html">
+                        <i class="nav-icon fas fa-id-card"></i>
+                        Cards
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alerts.html">
+                        <i class="nav-icon fas fa-exclamation-circle"></i>
+                        Alerts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progress.html">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        Progress
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modals.html">
+                        <i class="nav-icon fas fa-window-maximize"></i>
+                        Modals
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tooltips.html">
+                        <i class="nav-icon fas fa-comment"></i>
+                        Tooltips
+                    </a>
+                </li>
+                
+                <!-- Communication -->
+                <li class="nav-item">
+                    <a class="nav-link" href="inbox.html">
+                        <i class="nav-icon fas fa-inbox"></i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notifications.html">
+                        <i class="nav-icon fas fa-bell"></i>
+                        Notifications
+                    </a>
+                </li>
+                
+                <!-- Project Management -->
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">
+                        <i class="nav-icon fas fa-columns"></i>
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar.html">
+                        <i class="nav-icon fas fa-calendar"></i>
+                        Calendar
+                    </a>
+                </li>
+                
+                <!-- System -->
+                <li class="nav-item">
+                    <a class="nav-link" href="settings.html">
+                        <i class="nav-icon fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logs.html">
+                        <i class="nav-icon fas fa-history"></i>
+                        Audit Logs
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="activity.html">
+                        <i class="nav-icon fas fa-list"></i>
+                        Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file-manager.html">
+                        <i class="nav-icon fas fa-folder"></i>
+                        File Manager
+                    </a>
+                </li>
+                
+                <!-- Onboarding & Support -->
+                <li class="nav-item">
+                    <a class="nav-link" href="onboarding.html">
+                        <i class="nav-icon fas fa-person-walking-arrow-right"></i>
+                        Onboarding
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">
+                        <i class="nav-icon fas fa-circle-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                
+                <!-- Business Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">
+                        <i class="nav-icon fas fa-tags"></i>
+                        Pricing
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="invoice.html">
+                        <i class="nav-icon fas fa-file-invoice"></i>
+                        Invoice
+                    </a>
+                </li>
+                
+                <!-- Utility Pages -->
+                <li class="nav-item">
+                    <a class="nav-link" href="blank.html">
+                        <i class="nav-icon fas fa-file"></i>
+                        Blank Page
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="access-denied.html">
+                        <i class="nav-icon fas fa-ban"></i>
+                        Access Denied
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="404.html">
+                        <i class="nav-icon fas fa-exclamation-triangle"></i>
+                        404 Error
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="500.html">
+                        <i class="nav-icon fas fa-times-circle"></i>
+                        500 Error
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <button class="btn btn-link d-md-none" id="sidebarToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-left">
+                <h1>Discount Approval</h1>
+                <p class="text-muted mb-0">Review and approve pending discount requests.</p>
+            </div>
+            <div class="header-right">
+                <div class="dropdown">
+                    <button class="btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="fas fa-filter me-2"></i>Filter by Status
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="filterByStatus('all')">All Requests</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="filterByStatus('pending')">Pending Only</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="filterByStatus('approved')">Approved</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="filterByStatus('rejected')">Rejected</a></li>
+                    </ul>
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">JD</div>
+                    <div>
+                        <div class="fw-semibold">John Doe</div>
+                        <small class="text-muted">Administrator</small>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Summary Cards - Compact -->
+            <div class="row mb-3">
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card compact-stat-card">
+                        <div class="card-body text-center py-2">
+                            <div class="stat-icon-compact mb-2">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h5 class="text-warning mb-1">8</h5>
+                            <small class="text-muted">Pending</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card compact-stat-card">
+                        <div class="card-body text-center py-2">
+                            <div class="stat-icon-compact success mb-2">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h5 class="text-success mb-1">24</h5>
+                            <small class="text-muted">Approved</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card compact-stat-card">
+                        <div class="card-body text-center py-2">
+                            <div class="stat-icon-compact warning mb-2">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h5 class="text-info mb-1">$2,450</h5>
+                            <small class="text-muted">Total Value</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-2">
+                    <div class="card compact-stat-card">
+                        <div class="card-body text-center py-2">
+                            <div class="stat-icon-compact danger mb-2">
+                                <i class="fas fa-times-circle"></i>
+                            </div>
+                            <h5 class="text-danger mb-1">3</h5>
+                            <small class="text-muted">Rejected</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Discount Requests Table -->
+            <div class="card compact-table">
+                <div class="card-header compact-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h6 class="card-title mb-0">
+                            <i class="fas fa-percentage me-2"></i>Discount Requests
+                        </h6>
+                        <div class="d-flex gap-1">
+                            <div class="input-group" style="width: 200px;">
+                                <span class="input-group-text">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <input type="text" class="form-control table-search" placeholder="Search...">
+                            </div>
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fas fa-plus me-1"></i>New
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body p-2">
+                    <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                        <table class="table data-table table-sm">
+                            <thead class="sticky-top">
+                                <tr>
+                                    <th data-sort="1" style="width: 10%">ID</th>
+                                    <th data-sort="2" style="width: 20%">Customer</th>
+                                    <th data-sort="3" style="width: 20%">Product</th>
+                                    <th data-sort="4" style="width: 12%">Original</th>
+                                    <th data-sort="5" style="width: 8%">Discount</th>
+                                    <th data-sort="6" style="width: 12%">Final</th>
+                                    <th data-sort="7" style="width: 8%">Status</th>
+                                    <th data-sort="8" style="width: 10%">Requested By</th>
+                                    <th style="width: 10%">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-id="1">
+                                    <td><strong>#DIS001</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem;">JD</div>
+                                            <div>
+                                                <div class="fw-semibold">John Doe</div>
+                                                <small class="text-muted">Acme Corp</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-icon me-2">
+                                                <i class="fas fa-laptop"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">MacBook Pro 16"</div>
+                                                <small class="text-muted">Bulk Order (10 units)</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>$24,990.00</strong></td>
+                                    <td><span class="badge bg-warning">15%</span></td>
+                                    <td><strong>$21,241.50</strong></td>
+                                    <td class="discount-status">
+                                        <span class="badge badge-pending">Pending</span>
+                                    </td>
+                                    <td>Sarah Miller</td>
+                                    <td>2024-02-20</td>
+                                    <td class="discount-actions">
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-success" onclick="approveDiscount(1)" data-bs-toggle="tooltip" title="Approve">
+                                                <i class="fas fa-check"></i>
+                                            </button>
+                                            <button class="btn btn-danger" onclick="rejectDiscount(1)" data-bs-toggle="tooltip" title="Reject">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-id="2">
+                                    <td><strong>#DIS002</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem; background: var(--success-gradient);">SM</div>
+                                            <div>
+                                                <div class="fw-semibold">Sarah Miller</div>
+                                                <small class="text-muted">Tech Solutions</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-icon me-2" style="background: var(--success-gradient);">
+                                                <i class="fas fa-mobile-alt"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">iPhone 15 Pro</div>
+                                                <small class="text-muted">Corporate Account</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>$9,990.00</strong></td>
+                                    <td><span class="badge bg-info">10%</span></td>
+                                    <td><strong>$8,991.00</strong></td>
+                                    <td class="discount-status">
+                                        <span class="badge badge-pending">Pending</span>
+                                    </td>
+                                    <td>Mike Johnson</td>
+                                    <td>2024-02-20</td>
+                                    <td class="discount-actions">
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-success" onclick="approveDiscount(2)" data-bs-toggle="tooltip" title="Approve">
+                                                <i class="fas fa-check"></i>
+                                            </button>
+                                            <button class="btn btn-danger" onclick="rejectDiscount(2)" data-bs-toggle="tooltip" title="Reject">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-id="3">
+                                    <td><strong>#DIS003</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem; background: var(--warning-gradient);">MJ</div>
+                                            <div>
+                                                <div class="fw-semibold">Mike Johnson</div>
+                                                <small class="text-muted">Global Inc</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-icon me-2" style="background: var(--warning-gradient);">
+                                                <i class="fas fa-headphones"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">AirPods Pro</div>
+                                                <small class="text-muted">Employee Purchase</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>$2,490.00</strong></td>
+                                    <td><span class="badge bg-success">20%</span></td>
+                                    <td><strong>$1,992.00</strong></td>
+                                    <td class="discount-status">
+                                        <span class="badge badge-pending">Pending</span>
+                                    </td>
+                                    <td>Emily Wilson</td>
+                                    <td>2024-02-19</td>
+                                    <td class="discount-actions">
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-success" onclick="approveDiscount(3)" data-bs-toggle="tooltip" title="Approve">
+                                                <i class="fas fa-check"></i>
+                                            </button>
+                                            <button class="btn btn-danger" onclick="rejectDiscount(3)" data-bs-toggle="tooltip" title="Reject">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-id="4">
+                                    <td><strong>#DIS004</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem; background: var(--danger-gradient);">EW</div>
+                                            <div>
+                                                <div class="fw-semibold">Emily Wilson</div>
+                                                <small class="text-muted">Creative Agency</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-icon me-2" style="background: var(--danger-gradient);">
+                                                <i class="fas fa-tshirt"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">Cotton T-Shirt</div>
+                                                <small class="text-muted">Promotional Items</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>$599.80</strong></td>
+                                    <td><span class="badge bg-warning">25%</span></td>
+                                    <td><strong>$449.85</strong></td>
+                                    <td class="discount-status">
+                                        <span class="badge badge-pending">Pending</span>
+                                    </td>
+                                    <td>Robert Brown</td>
+                                    <td>2024-02-19</td>
+                                    <td class="discount-actions">
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-success" onclick="approveDiscount(4)" data-bs-toggle="tooltip" title="Approve">
+                                                <i class="fas fa-check"></i>
+                                            </button>
+                                            <button class="btn btn-danger" onclick="rejectDiscount(4)" data-bs-toggle="tooltip" title="Reject">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-id="5">
+                                    <td><strong>#DIS005</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem; background: var(--info-gradient);">RB</div>
+                                            <div>
+                                                <div class="fw-semibold">Robert Brown</div>
+                                                <small class="text-muted">Finance Corp</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-icon me-2" style="background: var(--info-gradient);">
+                                                <i class="fas fa-book"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">Business Strategy Book</div>
+                                                <small class="text-muted">Training Materials</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>$999.50</strong></td>
+                                    <td><span class="badge bg-primary">30%</span></td>
+                                    <td><strong>$699.65</strong></td>
+                                    <td class="discount-status">
+                                        <span class="badge badge-pending">Pending</span>
+                                    </td>
+                                    <td>Lisa Davis</td>
+                                    <td>2024-02-18</td>
+                                    <td class="discount-actions">
+                                        <div class="btn-group btn-group-sm">
+                                            <button class="btn btn-success" onclick="approveDiscount(5)" data-bs-toggle="tooltip" title="Approve">
+                                                <i class="fas fa-check"></i>
+                                            </button>
+                                            <button class="btn btn-danger" onclick="rejectDiscount(5)" data-bs-toggle="tooltip" title="Reject">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                            <button class="btn btn-outline-primary" data-bs-toggle="tooltip" title="View Details">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-id="6">
+                                    <td><strong>#DIS006</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem;">TG</div>
+                                            <div>
+                                                <div class="fw-semibold">Tom Garcia</div>
+                                                <small class="text-muted">Startup Inc</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-icon me-2">
+                                                <i class="fas fa-laptop"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">MacBook Air M2</div>
+                                                <small class="text-muted">New Customer</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>$1,199.00</strong></td>
+                                    <td><span class="badge bg-info">12%</span></td>
+                                    <td><strong>$1,055.12</strong></td>
+                                    <td class="discount-status">
+                                        <span class="badge badge-approved">Approved</span>
+                                    </td>
+                                    <td>Alex Kim</td>
+                                    <td>2024-02-17</td>
+                                    <td class="discount-actions">
+                                        <span class="text-muted">Completed</span>
+                                    </td>
+                                </tr>
+                                <tr data-id="7">
+                                    <td><strong>#DIS007</strong></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-avatar me-2" style="width: 30px; height: 30px; font-size: 0.8rem; background: var(--success-gradient);">AL</div>
+                                            <div>
+                                                <div class="fw-semibold">Anna Lee</div>
+                                                <small class="text-muted">Marketing Pro</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="product-icon me-2" style="background: var(--success-gradient);">
+                                                <i class="fas fa-tablet-alt"></i>
+                                            </div>
+                                            <div>
+                                                <div class="fw-semibold">iPad Pro 12.9"</div>
+                                                <small class="text-muted">Bulk Order (5 units)</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><strong>$5,495.00</strong></td>
+                                    <td><span class="badge bg-warning">18%</span></td>
+                                    <td><strong>$4,505.90</strong></td>
+                                    <td class="discount-status">
+                                        <span class="badge badge-rejected">Rejected</span>
+                                    </td>
+                                    <td>David Chen</td>
+                                    <td>2024-02-16</td>
+                                    <td class="discount-actions">
+                                        <span class="text-muted">Completed</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions Panel - Compact -->
+            <div class="row mt-3">
+                <div class="col-lg-8">
+                    <div class="card compact-actions">
+                        <div class="card-body py-2">
+                            <div class="d-flex flex-wrap gap-2 align-items-center">
+                                <button class="btn btn-success btn-sm">
+                                    <i class="fas fa-check-double me-1"></i>Approve All
+                                </button>
+                                <button class="btn btn-outline-primary btn-sm">
+                                    <i class="fas fa-download me-1"></i>Export
+                                </button>
+                                <button class="btn btn-outline-info btn-sm">
+                                    <i class="fas fa-chart-line me-1"></i>Analytics
+                                </button>
+                                <div class="ms-auto">
+                                    <small class="text-muted">Auto-Approval: 10% | Max Discount: 30%</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <style>
+        .product-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 8px;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .input-group-text {
+            background: var(--light-bg);
+            border-color: var(--border-color);
+            color: var(--text-secondary);
+        }
+        
+        .btn-group-sm .btn {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+        }
+        
+        .table th {
+            border-top: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+        }
+        
+        .table th[data-sort] {
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .table th[data-sort]:hover {
+            background-color: var(--light-bg);
+        }
+
+        /* Compact Styles */
+        .compact-stat-card {
+            margin-bottom: 0.5rem;
+        }
+
+        .compact-stat-card .card-body {
+            padding: 0.75rem;
+        }
+
+        .stat-icon-compact {
+            width: 35px;
+            height: 35px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+            margin: 0 auto;
+            background: var(--primary-gradient);
+        }
+
+        .stat-icon-compact.success {
+            background: var(--success-gradient);
+        }
+
+        .stat-icon-compact.warning {
+            background: var(--warning-gradient);
+        }
+
+        .stat-icon-compact.danger {
+            background: var(--danger-gradient);
+        }
+
+        .compact-table .card-body {
+            padding: 0.5rem;
+            max-height: 450px;
+            overflow-y: auto;
+        }
+
+        .compact-header {
+            margin-bottom: 0.5rem;
+        }
+
+        .compact-header .card-header {
+            padding: 0.75rem 1rem;
+        }
+
+        .compact-actions .card-body {
+            padding: 0.75rem;
+        }
+
+        /* Table compact styling */
+        .table-sm th,
+        .table-sm td {
+            padding: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        .table-sm .btn-sm {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+        }
+
+        .sticky-top {
+            position: sticky;
+            top: 0;
+            background: var(--light-bg);
+            z-index: 10;
+        }
+    </style>
+    
+    <script>
+        function filterByStatus(status) {
+            const rows = document.querySelectorAll('tbody tr');
+            
+            rows.forEach(row => {
+                const statusCell = row.querySelector('.discount-status .badge');
+                const rowStatus = statusCell.textContent.toLowerCase().trim();
+                
+                if (status === 'all' || rowStatus === status) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+        
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to action buttons
+            const actionButtons = document.querySelectorAll('.btn-group .btn');
+            actionButtons.forEach(btn => {
+                btn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.1)';
+                });
+                
+                btn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
