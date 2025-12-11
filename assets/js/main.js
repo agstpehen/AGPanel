@@ -697,7 +697,7 @@ function initBreadcrumbs() {
     
     const breadcrumbHTML = breadcrumbs.map((crumb, index) => {
         const isLast = index === breadcrumbs.length - 1;
-        const href = isLast ? '#' : (index === 0 ? 'dashboard.html' : '#');
+        const href = isLast ? '#' : (index === 0 ? 'index.html' : '#');
         
         return `
             <li class="breadcrumb-item ${isLast ? 'active' : ''}">

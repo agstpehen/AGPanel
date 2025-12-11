@@ -35,7 +35,7 @@ AGPanel/
 │   │   └── style.css          # Main stylesheet
 │   └── js/
 │       └── main.js            # Main JavaScript file
-├── dashboard.html             # Main dashboard
+├── index.html             # Main dashboard
 ├── login.html                 # Login page
 ├── users.html                 # User management
 ├── roles.html                 # Role & permission management
@@ -213,7 +213,7 @@ The template is fully responsive and optimized for:
 ## 🚀 Getting Started
 
 1. **Download** the template files
-2. **Open** `dashboard.html` in your browser
+2. **Open** `index.html` in your browser
 3. **Customize** the content and styling as needed
 4. **Integrate** with your backend system
 5. **Deploy** to your web server
